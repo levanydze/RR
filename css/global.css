@@ -3415,6 +3415,9 @@ body .footer .footerWrapp .footerSections .section p {
   }
 }
 @media (max-width: 630px) {
+  body {
+    margin: 0 auto;
+  }
   body .menuWrapper {
     display: none;
   }
@@ -3424,6 +3427,16 @@ body .footer .footerWrapp .footerSections .section p {
   body .menuWrapper .wrapper .right {
     padding-right: 0;
     width: 70%;
+  }
+  body .contactForm {
+    flex-flow: column;
+  }
+  body .contactForm .contactFormWrapper {
+    width: 100%;
+  }
+  body .contactForm .contactMap {
+    width: 100%;
+    height: 300px;
   }
   body .sideWrapper {
     border: 2px solid rgba(0, 0, 0, 0.593);
