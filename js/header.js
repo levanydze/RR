@@ -11,7 +11,7 @@
             <div class='menu-button'></div>
           </label>
             <ul class="menu">
-              <li class="menuLi"><a href="home.html">HOME</a></li>
+              <li class="menuLi"><a href="index.html">HOME</a></li>
               <li class="menuLi"><a href="menu.html">MENU</a></li>
               <li class="menuLi"><a href="history.html">HISTORY</a>          </li>
               <li class="menuLi"><a href="contact.html">CONTACT</a></li>
