@@ -5,7 +5,7 @@
         connectedCallback() {
           this.innerHTML = `<div class="navvv">
           <div class="top-nav">
-            <div><a class="logoText" href="home.html">ChaCha Restaurant</a></div>
+            <div><a class="logoText" href="index.html">ChaCha Restaurant</a></div>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
             <div class='menu-button'></div>
