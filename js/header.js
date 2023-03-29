@@ -40,7 +40,7 @@
                             
                   <div class="left">
                       <li class="menuLi">
-                          <ul><a class="menuBtn" href="home.html">HOME</a></ul>
+                          <ul><a class="menuBtn" href="index.html">HOME</a></ul>
                           <ul><a class="menuBtn" href="menu.html">MENU</a></ul>
                           <ul><a class="menuBtn" href="history.html">HISTORY</a></ul>
                           <ul><a class="menuBtn" href="contact.html">CONTACT</a></ul>
