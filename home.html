@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaCha Restaurant</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=BenchNine:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <script type="module" src="js/header.js"></script>
+    <script type="module" src="js/footer.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+    <script src="js/accordion.js" defer></script>
+    <script src="js/reservation.js" defer></script>
+
+
+</head>
+<body">
+
+
+
+<!-- START BURGER MENU -->
+  <div class="navvv">
+    <div class="top-nav">
+      <div><a class="logoText" href="home.html">ChaCha Restaurant</a></div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+      <ul class="menu">
+        <li class="menuLi"><a href="home.html">HOME</a></li>
+        <li class="menuLi"><a href="menu.html">MENU</a></li>
+        <li class="menuLi"><a href="history.html">HISTORY</a>          </li>
+        <li class="menuLi"><a href="contact.html">CONTACT</a></li>
+        <li class="menuLi"><a href="reservation.html">MAKE BOOKING</a></li>
+        <li style=" border: none;" class="menuLi"></li>
+        <li style=" border: none;" class="menuLi"></li>
+        <li style=" border: none;" class="menuLi"></li>
+        <li style=" border: none;" class="menuLi"></li>
+        <li style=" border: none;" class="menuLi"></li>
+        <li style=" border: none;" class="menuLi"></li>
+        <li style=" border: none;" class="menuLi"></li>
+        <li style=" border: none;" class="menuLi"></li>
+      </ul>
+    </div>
+  </div>
+<!-- END BURGER BAR -->
+
+
+
+<!-- START NAVIGATION -->
+  <header  class="myContainer"> 
+    <div class="menuWrapper">
+        <div class="wrapper"> 
+                      
+            <div class="left">
+                <li class="menuLi">
+                    <ul><a class="menuBtn" href="home.html">HOME</a></ul>
+                    <ul><a class="menuBtn" href="menu.html">MENU</a></ul>
+                    <ul><a class="menuBtn" href="history.html">HISTORY</a></ul>
+                    <ul><a class="menuBtn" href="contact.html">CONTACT</a></ul>
+                </li>
+            </div>
+            <div class="right">
+                <!-- START Make Reservation button + modal + overlay -->
+                <a class="buttonR" data-modal-target="#modal">MAKE RESERVATION</a>
+                    <div class="mymodal" id="modal">
+                      <div class="modal-header">
+                        <div class="title">Contact Information</div>
+                        <button data-close-button class="close-button">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                            <P>Call: +46 707174030 </P>
+                            <p>E-mail: info@ChaCha.com </p>
+                            <a href="https://goo.gl/maps/QnEjWzULMKhH3H1b9">Address: Praça do Município n23, Lisboa, Portugal</a>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6226.828782664931!2d-9.1496643!3d38.708294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193479567ac66d%3A0x3eef4fe30fcc5385!2sDelfina-Cantina%20Portuguesa!5e0!3m2!1sen!2sse!4v1679964565066!5m2!1sen!2sse" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                    </div>
+                    <div id="overlay"></div>  
+                <!-- END Make Reservation button + modal + overlay  -->
+            </div>
+        </div>
+    </div>
+  </header>
+  <div class="undermenu"> </div>
+<!-- END NAVIGATIONr -->
+
+
+
+    
+<!-- START Slider -->
+  <div class="sliderWrapper myContainer ">
+      <div class="myslider">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item  active">
+                  <img src="img/Slider/1.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                <div class="slider-text">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Slider/2.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Slider/3jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      </div>
+  </div>
+<!-- END Slider -->
+
+
+<!-- START SIDE PHOTO/TEXT -->
+  <section class="myContainer">
+    <div class="sideWrapper">
+      <div class="sidePhoto">
+        <img src="img/side1.jpg" alt="">
+      </div>
+      <div class="sideText">
+       <div class="sideTextBox">
+        <div class="spacer"></div>
+        <h4 class="sideH"> Somthing that you will never forget</h4>
+        <p class="sideP">No specials, no shortcuts, no excuses.When chef Sandra Vega Jega took a two-week trip to Japan, she had never had ramen before. Upon returning to the States, she dedicated herself to learning how to make the perfect bowl. The rest is history. No specials, no shortcuts, no excuses.When chef Sandra Vega Jega took a two-week trip to Japan, she had never had ramen before. Upon returning to the States, she dedicated herself to learning how to make the perfect bowl. The rest is history.</p>
+        <div class="pspacer"></div>
+       </div>
+      </div>
+    </div>
+
+    <div class="sideWrapper">
+      <div class="sidePhoto">
+        <img src="img/side2.jpg" alt="">
+      </div>
+      <div class="sideText">
+       <div class="sideTextBox">
+        <div class="spacer"></div>
+        <h4 class="sideH"> Somthing that you will never forget</h4>
+        <p class="sideP">No specials, no shortcuts, no excuses.When chef Sandra Vega Jega took a two-week trip to Japan, she had never had ramen before. Upon returning to the States, she dedicated herself to learning how to make the perfect bowl. The rest is history. No specials, no shortcuts, no excuses.When chef Sandra Vega Jega took a two-week trip to Japan, she had never had ramen before. Upon returning to the States, she dedicated herself to learning how to make the perfect bowl. The rest is history.</p>
+        <div class="pspacer"></div>
+       </div>
+      </div>
+    </div>
+
+    <div class="sideWrapper">
+      <div class="sidePhoto">
+        <img src="img/side3.jpg" alt="">
+      </div>
+      <div class="sideText">
+       <div class="sideTextBox">
+        <div class="spacer"></div>
+        <h4 class="sideH"> Somthing that you will never forget</h4>
+        <p class="sideP">No specials, no shortcuts, no excuses.When chef Sandra Vega Jega took a two-week trip to Japan, she had never had ramen before. Upon returning to the States, she dedicated herself to learning how to make the perfect bowl. The rest is history. No specials, no shortcuts, no excuses.When chef Sandra Vega Jega took a two-week trip to Japan, she had never had ramen before. Upon returning to the States, she dedicated herself to learning how to make the perfect bowl. The rest is history.</p>
+        <div class="pspacer"></div>
+       </div>
+      </div>
+    </div>
+  </section>
+<!-- END SIDE PHOTO/TEXT -->
+
+
+<!-- START THREE BOX -->
+  <div class="myContainer">
+    <div class="threeWrapper">
+      <div class="threeTextBox">
+        <div class="iconBox"> <img class="grillIcon" src="img/grill.png" alt=""></div>
+        <h3>The BBQ Place.</h2>
+        <h4>Our Delicious Story</h4>
+        <p>Luctus nec ullamcorper mattis, pulvinar dapibus leo adipiscing elit elit tellus.</p>
+        <p class="max200">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        <div class="threeReservation">
+          <button class="button" data-modal-target="#modal">MAKE RESERVATION</button>
+        </div>
+      </div>
+      <div class="threeImgBox"><img src="img/side1.jpg" alt=""></div>
+      <div class="threeImgBox"><img src="img/side2.jpg" alt=""></div>
+    </div>
+
+  </div>
+<!-- END THREE BOX -->
+
+
+
+<!-- START KITCHEN -->
+  <section class="myContainer">
+    <div class="kitchenWrapper">
+      <div class="imgWrapper">
+        <div class="kitchenImg"><img src="img/kitchen.jpg" alt=""><h5>THE KITCHEN</h5></div>
+        <div class="overlayImg"></div>
+      </div>
+
+      <div class="kitchenTextWrapper">
+        <div class="textBoxes">
+          <h3 class="chefName">Levani Levanidze</h3>
+          <h4 class="chefTitle">Excutive Chef</h4>
+          <h5 class="cheftext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium eaque sunt iusto incidunt. Assumenda, sed voluptates amet ratione praesentium facilis suscipit sint, hic, ipsa eligendi odio Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque explicabo illo fugiat, molestias debitis optio, corporis doloribus fugit voluptatibus, enim cumque tempore reprehenderit? Dignissimos corrupti ipsa saepe harum officiis amet. repellat! Vero, distinctio!</h5>
+        </div>
+        <div class="textBoxes">
+          <h3 class="chefName">Levani Levanidze</h3>
+          <h4 class="chefTitle">Kitchen Chef</h4>
+          <h5 class="cheftext"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque dicta, quia perspiciatis recusandae sit praesentium dolore dolores, totam eos ea, saepe molestiae veniam libero quasi nobis? Dolores, placeat qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium eaque sunt iusto incidunt. Assumenda, sed voluptates amet ratione praesentium facilis suscipit sint, hic, ipsa eligendi odio repellat! Vero, distinctio!</h5>
+        </div>
+        <div class="textBoxes">
+          <h3 class="chefName">Levani Levanidze</h3>
+          <h4 class="chefTitle">Pastry Chef</h4>
+          <p class="cheftext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium eaque sunt iusto incidunt. Assumenda, sed Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nemo enim, ipsam excepturi dignissimos animi, quae eos soluta nobis, hic vero libero placeat! Mollitia illum saepe, maiores cumque reiciendis aut. voluptates amet ratione praesentium facilis suscipit sint, hic, ipsa eligendi odio repellat! Vero, distinctio!</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+<!-- END KITCHEN -->
+
+<!-- START MAP -->
+  <div class="map">
+    <div class="mapWrapper">
+      <div class="mapText">
+        <div class="text location">
+          <h4>Location</h4>
+          <p> Praça do Município n23, </p>
+          <p>Lisboa, Portugal</p>
+        </div>
+        <div class="text hours">
+          <h4>Working Hourss</h4>
+          <p>MON – <span> Fri: 7.00am – 6.00pm </span> </p>   
+          <p>SAT – <span> Fri: 7.00am – 6.00pm </span> </p>   
+          <p>SUN – <span> Fri: 8.00am – 6.00pm </span> </p>   
+
+        </div>
+        <div class="text contact">
+          <h4>Contact</h4>
+          <p>info@ChaCha.com</p>
+          <p>0707174030</p>
+        </div>
+      </div>
+      <div class="mapDiv">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6226.828782664931!2d-9.1496643!3d38.708294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193479567ac66d%3A0x3eef4fe30fcc5385!2sDelfina-Cantina%20Portuguesa!5e0!3m2!1sen!2sse!4v1679656053134!5m2!1sen!2sse" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+<!-- END MAP -->
+
+
+
+
+<!-- START FOOTER -->
+  <footer class="footer">
+    <div class="footerWrapp">
+      <div class="footerSections">
+        <div class="sectionAddress sec">
+          <h4>ChaCha</h4>
+          <p> Praça do Município n23, </p>
+          <p>Lisboa, Portugal</p>
+          <p>info@ChaCha.com</p>
+          <p>0707174030</p>
+        </div>
+        <div class="section sec empty">
+        
+        </div>
+        <div class="section sec">
+          <h4>Working Hourss</h4>
+          <p>MON – <span> Fri: 7.00am – 6.00pm </span> </p>   
+          <p>SAT – <span> Fri: 7.00am – 6.00pm </span> </p>   
+          <p>SUN – <span> Fri: 8.00am – 6.00pm </span> </p>   
+        </div>
+        <div class="section sec">
+          <h4>Follow us</h4>
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>Yelp</p>
+          <p>made by Levanidze</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- END Footer -->  
+
+</body>
+</html>

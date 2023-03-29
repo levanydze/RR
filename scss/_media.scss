@@ -1,0 +1,223 @@
+// MAX - WIDTH
+
+@media (max-width: 1000px) {
+    
+    body{
+        .menuWrapper{
+            .wrapper{  
+                .left {
+                    width: 50%;
+                }
+                .middle{
+                }
+                .right{
+                }
+            }
+        }
+        .sideWrapper{
+            .sideText{
+                .sideTextBox{
+                    h4{
+                        font-size: 20px;
+                        padding-bottom: 20px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .footer{
+            .footerWrapp{
+                .footerSections{
+                    .empty{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .threeWrapper{
+            .threeTextBox{
+                .iconBox{
+                    display: none;
+                }
+            }
+        }
+
+        .kitchenWrapper{
+            .imgWrapper{
+                margin-bottom: 0;
+            }
+            .kitchenTextWrapper{
+                flex-flow: wrap;
+                .textBoxes{
+                    width: 100%;
+                    text-align: center;
+                    h3{
+                        padding-top: 50px;
+                        padding-bottom: 15px;
+                    }
+                    h4{
+                    }
+                    p{
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 630px){
+    body{
+        .menuWrapper{
+            display: none;
+            .wrapper{
+                .left{
+                    display: none;
+                }
+                .right{
+                    padding-right: 0;
+                    width: 70%;
+                }
+            }
+        }
+    
+    
+
+    
+        .sideWrapper{
+            border: 2px solid $DarkLight;
+            flex-flow: column-reverse;
+            margin: 40px auto;
+            padding: 40px 40px;
+            .sidePhoto{
+                padding-top: 40px;
+                img{
+                    margin: 0 auto;
+                    width: 100%;
+
+                }
+            }
+            .sideText{
+                width: 100%;
+                .sideTextBox{
+                    width: 100%;
+                    h4{
+                    }
+                }
+            }
+
+        }
+        .sideWrapper:nth-child(even) {
+            flex-flow: column-reverse;
+        }
+
+        .threeWrapper{
+            padding: 40px;
+            flex-flow: wrap;
+            justify-content: space-between;
+            border: 2px solid $DarkLight;
+            .threeTextBox{
+                width: 100%;
+                height: 200px;
+                .icoonBox{
+                }
+                .threeReservation{
+                    display: none;
+                }
+            }
+            .threeImgBox{
+                width: 48%;
+                padding-top: 40px;
+            }
+        }
+
+        .kitchenWrapper{
+            padding-bottom: 100px;
+            .imgWrapper{
+                .kitchenImg{
+                    h5{
+                        font-size: 25px;
+                        min-width: 169px;
+                    }
+                }
+            }
+            .kitchenTextWrapper{
+                text-align: center;
+
+                .textBoxes{
+                    h3{
+
+                    }
+                    h4{
+
+                    }
+                    p{
+
+                    }
+                }
+
+
+            }
+        }
+
+        .map{
+            padding: 0;
+
+            .mapWrapper{
+                flex-flow: column;
+                width: 100%;
+                .mapText{
+                display: none;
+                    
+                }
+                .mapDiv{
+                    width: 100%;
+                    padding: 20px;
+                }
+            }
+        }
+
+
+        .footer{
+            .footerWrapp{
+                .footerSections{
+                    flex-flow: column;
+                    .sec{
+                        text-align: center;
+                        width: 100%;
+                        padding-top: 30px;
+                        h4{
+                        padding-bottom: 10px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// MIN - WIDTH
+
+@media(min-width: 630px){
+    body{
+        .navvv{
+            display: none;
+        }
+        .myContainer{
+            .menuWrapper{
+                .wrapper{
+                    
+                }
+            }
+        }
+    }
+}
+

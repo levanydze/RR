@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaCha Restaurant</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=BenchNine:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <script type="module" src="js/header.js"></script>
+    <script type="module" src="js/footer.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+    <script src="/js/burgermenu.js"></script>
+    <script src="js/accordion.js" defer></script>
+    <script src="js/reservation.js" defer></script>
+    <script src="js/test.js" defer></script>
+
+
+</head>
+<body class="body">
+
+
+
+<!-- START BURGER BAAR -->
+  <div class="navvv">
+        <div class="top-nav">
+          <div>
+            ChaCha Restaurant
+          </div>
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
+          <ul class="menu">
+            <li class="menuLi"><a href="home.html">HOME</a></li>
+            <li class="menuLi"><a href="menu.html">MENU</a></li>
+            <li class="menuLi"><a href="history.html">HISTORY</a>          </li>
+            <li class="menuLi"><a href="contact.html">CONTACT</a></li>
+            <li class="menuLi"><a href="reservation.html">MAKE BOOKING</a></li>
+            <li style=" border: none;" class="menuLi"></li>
+            <li style=" border: none;" class="menuLi"></li>
+            <li style=" border: none;" class="menuLi"></li>
+            <li style=" border: none;" class="menuLi"></li>
+            <li style=" border: none;" class="menuLi"></li>
+            <li style=" border: none;" class="menuLi"></li>
+            <li style=" border: none;" class="menuLi"></li>
+            <li style=" border: none;" class="menuLi"></li>
+
+          </ul>
+          
+        </div>
+  </div>
+<!-- END BURGER BAR -->
+  
+ 
+  
+<!-- START HEADER -->
+  <header  class="myContainer"> 
+        <div class="menuWrapper">
+            <div class="wrapper"> 
+                          
+                <div class="left">
+                    <li class="menuLi">
+                        <ul><a class="menuBtn" href="home.html">HOME</a></ul>
+                        <ul><a class="menuBtn" href="menu.html">MENU</a></ul>
+                        <ul><a class="menuBtn" href="history.html">HISTORY</a></ul>
+                        <ul><a class="menuBtn" href="contact.html">CONTACT</a></ul>
+                    </li>
+                </div>
+                <div class="right">
+                    <!-- START Make Reservation button + modal + overlay -->
+                    <a class="buttonR" data-modal-target="#modal">MAKE RESERVATION</a>
+                        <div class="mymodal" id="modal">
+                          <div class="modal-header">
+                            <div class="title">Contact Information</div>
+                            <button data-close-button class="close-button">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                                <P>Call: +46 707174030 </P>
+                                <p>E-mail: info@ChaCha.com </p>
+                                <a href="https://goo.gl/maps/QnEjWzULMKhH3H1b9">Address: Praça do Município n23, Lisboa, Portugal</a>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6226.828782664931!2d-9.1496643!3d38.708294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193479567ac66d%3A0x3eef4fe30fcc5385!2sDelfina-Cantina%20Portuguesa!5e0!3m2!1sen!2sse!4v1679964565066!5m2!1sen!2sse" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </div>
+                        </div>
+                        <div id="overlay"></div>  
+                    <!-- END Make Reservation button + modal + overlay  -->
+                </div>
+            </div>
+        </div>
+  </header>
+  <div class="undermenu"> </div>
+
+<!-- END HEADER -->
+
+
+<!-- start history -->
+<div class="overallStory">
+    <h3>Every Georgian dish is a story</h3>
+    <p> If we talk about Georgian Kitchen, the one of the first dish any mentions will be Khinkali, although it has not invented in Georgia and as many other dumplings comes from China. So before we find out why it has the main place in Georgian Cousins, let’s see the route which the dumplings have gone through thousand years before arriving to Georgia.</p>
+    <img src="/img/Reserve/bbckhinkali.jpg" alt="">
+    <p>As the legend says, the first dumpling in the world, Jiao zi, was invented in ancient China by famous Chinese doctor – Zhang Zhongjing to save people from frostbite. It was made with all kinds of fillings such as mutton, hot pepper and some medicinal materials and really helped poor people to keep warm in cold winter. Probably because of that Jiao zi has got mystical meaning and is the main dish for Chinese New Year Eve since then.
+
+        Many years later Mongols learned how to make dumplings from Chinese people and found out that they were very convenient for travel. So dumplings became inseparable victuals for Mongolian warriors. During their invading trips in the 13-14th centuries those warriors took dumplings to Siberia and Caucasus. Since then Jiao zi has turned into: Pelmeni in Russia, Vareniki in Ukraine, Piorogi in Poland and Ravioli in Italy, Kreplachi in Israel, Khingal in Azerbaijan, Khinkali in Georgia and etc…The ingredients of all of these dishes are almost the same, but they are still tremendously different from one another. Maybe because that each country has given to them it’s own “soul” and magic.
+        
+        Dumplings brought by Mongols to Siberia were hunter’s food at first and have got dry filling, because they were much more convenient for traveling in that way. Later they have been spread from Siberia to Russia and from Russia to several countries of Europe, but the filling remained the same. That’s why Pelmeni, Vareniki, Ravioli, Piorogi and etc. have much more in common with one another than with their Caucasian cousins. In Caucasus Mongolian dumplings have significantly different history: they were sheep-breeders food firstly and have been made from lamb mainly. As sheep-breeders stayed at one place for some time and were not permanently on the way, they added water in the filling of the food and have got a very special and delicious new “ingredient” – the juice of the dumping in return. The juicy dumplings have been spread everywhere in Caucasus and later on in Turkey as well.</p>
+</div>
+<!-- end Reseration -->
+
+
+
+
+
+<!-- js Footer -->
+<chacha-footer> </chacha-footer>
+<!-- js Footer -->  
+
+
+
+    
+    
+</body>
+</html>
