@@ -2988,7 +2988,7 @@ body .threeWrapper .threeImgBox img {
   height: 100%;
 }
 body .kitchenWrapper {
-  padding: 40px 0;
+  padding: 0 0 40px 0;
   font-family: "Raleway", sans-serif;
 }
 body .kitchenWrapper .imgWrapper {
@@ -3037,36 +3037,49 @@ body .menuStarter {
   padding: 40px 0;
 }
 body .menuStarter .eachBox {
-  width: 30%;
+  width: 25%;
   position: relative;
   overflow: hidden;
 }
 body .menuStarter .eachBox .imgBox {
   display: flex;
   justify-content: space-around;
+  position: relative;
+  max-height: 400px;
 }
 body .menuStarter .eachBox .imgBox img {
+  overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 300px;
-  opacity: 0.6;
+  opacity: 0.8;
+  z-index: 2;
+}
+body .menuStarter .eachBox .imgBox .starterBg {
+  overflow: hidden;
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
 }
 body .menuStarter .eachBox .textBox {
   width: 100%;
-  color: #fffaf7;
   position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 5px;
   text-align: center;
+  z-index: 3;
+  color: #fffaf7;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
 }
 body .menuStarter .eachBox .textBox h3 {
   font-size: 22px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 body .menuStarter .eachBox .textBox h4 {
   font-size: 18px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 body .menuStarter .eachBox .textBox h5 {
   font-size: 15p;
@@ -3089,6 +3102,18 @@ body .accordionWrapper .accordionHead {
   font-weight: bold;
   border-bottom: 2px solid hwb(0 40% 60%);
   border-top: 2px solid hwb(0 40% 60%);
+}
+body .accordionWrapper .accordionBottom {
+  background: rgba(0, 0, 0, 0.863);
+  color: #fffaf7;
+  padding: 25px 18px;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  font-size: 40px;
+  transition: 0.4s;
+  font-weight: bold;
+  border-bottom: 2px solid hwb(0 40% 60%);
 }
 body .accordionWrapper .accordion {
   background-color: rgba(0, 0, 0, 0.863);
@@ -3136,12 +3161,11 @@ body .accordionWrapper .active:after {
   content: "−";
 }
 body .accordionWrapper .panel {
+  border-top: 2px solid hwb(0 40% 60%);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
-}
-body .accordionWrapper .panel {
-  border-top: 2px solid hwb(0 40% 60%);
+  font-family: "Nunito", sans-serif;
 }
 body .accordionWrapper .panel .accordion-body {
   padding: 25px 10px;
@@ -3152,27 +3176,6 @@ body .accordionWrapper .panel .accordion-body {
   background-color: rgba(0, 0, 0, 0.593);
   transition: 1s;
 }
-body .accordionWrapper .panel .accordion-body img {
-  width: 300px;
-  height: 200px;
-}
-body .accordionWrapper .panel .accordion-body h4 {
-  width: 250px;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
-  font-family: "Nunito", sans-serif;
-}
-body .accordionWrapper .panel .accordion-body h6 {
-  max-width: 250px;
-  height: 150px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 15px;
-  font-family: "Nunito", sans-serif;
-}
 body .accordionWrapper .panel .accordion-body .inner-div {
   height: 350px;
   border: 1px solid rgba(0, 0, 0, 0.863);
@@ -3180,6 +3183,37 @@ body .accordionWrapper .panel .accordion-body .inner-div {
   overflow: hidden;
   color: #fffaf7;
   background-color: rgba(0, 0, 0, 0.593);
+}
+body .accordionWrapper .panel .accordion-body .inner-div .imgWrap {
+  height: 200px;
+  width: 280px;
+  overflow: hidden;
+  position: relative;
+}
+body .accordionWrapper .panel .accordion-body .inner-div .imgWrap img {
+  max-width: 200px;
+  max-width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .accordionWrapper .panel .accordion-body .inner-div h4 {
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  width: 90%;
+}
+body .accordionWrapper .panel .accordion-body .inner-div h6 {
+  max-width: 250px;
+  height: 150px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 90%;
 }
 
 body .overallStory {
@@ -3233,6 +3267,9 @@ body .contactForm .contactFormWrapper {
   /* Style inputs with type="text", select elements and textareas */
   /* Style the submit button with a specific background color etc */
   /* When moving the mouse over the submit button, add a darker green color */
+}
+body .contactForm .contactFormWrapper label {
+  padding-left: 5px;
 }
 body .contactForm .contactFormWrapper input[type=text], body .contactForm .contactFormWrapper select, body .contactForm .contactFormWrapper textarea {
   width: 100%; /* Full width */
@@ -3380,6 +3417,46 @@ body .footer .footerWrapp .footerSections .section p:nth-child(5) {
 body .footer .footerWrapp .footerSections .section p {
   font-size: 15px;
   padding-top: 10px;
+}
+body .subscribeDiv {
+  background-color: rgba(0, 0, 0, 0.863);
+  width: 100%;
+}
+body .subscribeDiv h4 {
+  color: #fffaf7;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+body .subscribeDiv .subscribeWrapper {
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+}
+body .subscribeDiv .subscribeWrapper .subscribeInput {
+  width: 400%;
+  max-width: 600px;
+  height: 50px;
+  border: none;
+  border: 2px solid rgba(0, 0, 0, 0.593);
+}
+body .subscribeDiv .subscribeWrapper .subscribeButton {
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+  background: none;
+  border: none;
+  width: 100px;
+  transition: 0.5s;
+  border-left: 2px solid rgba(0, 0, 0, 0.593);
+  font-size: 20px;
+}
+body .subscribeDiv .subscribeWrapper .subscribeButton:hover {
+  background-color: rgba(0, 0, 0, 0.593);
+  color: rgba(0, 0, 0, 0.863);
 }
 
 @media (max-width: 1000px) {

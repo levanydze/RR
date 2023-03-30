@@ -562,7 +562,7 @@ body{
 
     // START KITCHEN
         .kitchenWrapper{
-            padding: 40px 0;
+            padding: 0 0 40px 0;
             font-family: 'Raleway', sans-serif;
 
             .imgWrapper{
@@ -628,36 +628,52 @@ body{
         background-color: $Dark;
         padding: 40px 0;
         .eachBox{
-            width: 30%;
+            width: 25%;
             position: relative;
             overflow: hidden;
             
             .imgBox{
                 display: flex;
                 justify-content: space-around;
+                position: relative;
+                max-height: 400px;
 
                 img{
+                    overflow: hidden;
                     object-fit: cover;
-                    max-height: 300px;
-                    opacity: 0.6;
+                    opacity: 0.8;
+                    z-index: 2;
+                }
+                .starterBg{
+                    overflow: hidden;
+                    position: absolute;
+                    background-color: black;
+                    height: 100%;
+                    width: 100%;
+                    max-width: 400px;
+                    
+
                 }
 
             }
             .textBox{
                 width: 100%;
-                color: $Light;
                 position: absolute;
-                top: 80%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                bottom: 5px;
                 text-align: center;
+                z-index: 3;
+                color: $Light;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-evenly;
+
                 h3{
                     font-size: 22px;
-                    padding-bottom: 15px;
+                    padding-bottom: 10px;
                 }
                 h4{
                     font-size: 18px;
-                    padding-bottom: 15px;
+                    padding-bottom: 10px;
 
                 }
                 h5{
@@ -693,9 +709,18 @@ body{
             font-weight: bold;
             border-bottom: 2px solid hwb(0 40% 60%);
             border-top: 2px solid hwb(0 40% 60%);
-
-
-            
+        }
+        .accordionBottom{
+            background: $Dark;
+            color: $Light;
+            padding: 25px 18px;
+            width: 100%;
+            text-align: center;
+            outline: none;
+            font-size: 40px;
+            transition: 0.4s;
+            font-weight: bold;
+            border-bottom: 2px solid hwb(0 40% 60%);
         }
 
         .accordion {
@@ -705,13 +730,8 @@ body{
             border: none;
             outline: none;
             transition: 0.4s;
-
             position: relative;
-        
-            
-
             p{
-
                 color: $Dark;
                 text-align: center;
                 color: $Light;
@@ -719,9 +739,6 @@ body{
                 font-size: 28px;
                 height: 30px;
                 padding: 3px 0;
-
-
-
             }
             h4{
                 display: flex;
@@ -732,8 +749,6 @@ body{
                 font-size: 15px;
                 text-align: center;
                 color: $Light;
-                
-
             }
         }
         
@@ -757,20 +772,13 @@ body{
         
         .active:after {
             content: "\2212";
-        }
-        
-        .panel {
+        }        
+        .panel{
+            border-top: 2px solid hwb(0 40% 60%);
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease-out;
-        }
-        
-        
-        
-        .panel{
-            border-top: 2px solid hwb(0 40% 60%);
-
-        
+            font-family: 'Nunito', sans-serif;
             .accordion-body{
                 padding: 25px 10px;
                 justify-content: space-evenly;
@@ -779,44 +787,49 @@ body{
                 gap: 20px;
                 background-color:$DarkLight;
                 transition: 1s;
-        
-                img{
-                width: 300px;
-                height: 200px;
-
-                }
-                h4{
-                    width: 250px;
-                    text-align: center;
-                    margin: 0 auto;
-                    font-size: 20px;
-                    font-weight: bold;
-                    margin-top: 20px;
-                    font-family: 'Nunito', sans-serif;
-                }
-        
-                h6{
-                max-width: 250px; 
-                height: 150px;
-                text-align: center;   margin: 0 auto; 
-                margin-top: 15px;
-                font-family: 'Nunito', sans-serif;
-
-                }
                 .inner-div{
-                height: 350px;
-                border: 1px solid $Dark;
-                border-radius: 10px;
-                overflow: hidden;
-                color: $Light;
-                background-color: $DarkLight;
-                }
-        
+                    height: 350px;
+                    border: 1px solid $Dark;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    color: $Light;
+                    background-color: $DarkLight;
+                    .imgWrap{
+                        height: 200px;
+                        width: 280px;
+                        overflow: hidden;
+                        position: relative;
+                            img{
+                                max-width: 200px;
+                                max-width: 280px;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                        h4{
+                            width: 250px;
+                            text-align: center;
+                            margin: 0 auto;
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin-top: 15px;
+                            width: 90%;
+                        }
+                        h6{
+                            max-width: 250px; 
+                            height: 150px;
+                            text-align: center;   margin: 0 auto; 
+                            margin-top: 10px;
+                            width: 90%;
+                        }
+                    }
             }
         }
     }
-    // END ACCORDION
 }
+    // END ACCORDION
 //   ====== END  MENU ======  //
 
 
@@ -883,7 +896,11 @@ body{
 
         .contactFormWrapper{
             width: 50%;
-    
+
+
+            label{
+                padding-left: 5px;
+            }
             /* Style inputs with type="text", select elements and textareas */
             input[type=text], select, textarea {
             width: 100%; /* Full width */
@@ -1090,6 +1107,49 @@ body{
         }
     }
 
+    }
+    .subscribeDiv{
+        h4{
+            color: $Light;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+        background-color: $Dark;
+        width: 100%;
+        .subscribeWrapper{
+        margin: 0 auto;
+            width: 80%;
+        position: relative;
+        overflow: hidden;
+        max-width: 600px;
+
+        .subscribeInput{
+            width: 400%;
+            max-width: 600px;
+            height: 50px;
+            border: none;
+            border: 2px solid $DarkLight;
+
+        }
+        .subscribeButton{
+            height: 50px;
+            position: absolute;
+            right: 0px;
+            z-index: 1;
+            background: none;
+            border: none;
+            width: 100px;
+            transition: 0.5s;
+            border-left: 2px solid $DarkLight ;
+            font-size: 20px;
+
+        }
+        .subscribeButton:hover{
+            background-color: $DarkLight;
+            color: $Dark;
+        }
+        }
     }
     // END foot
 }
