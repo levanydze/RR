@@ -3162,6 +3162,7 @@ body .accordionWrapper .active:after {
 }
 body .accordionWrapper .panel {
   border-top: 2px solid hwb(0 40% 60%);
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
   font-family: "Nunito", sans-serif;
