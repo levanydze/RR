@@ -736,7 +736,7 @@ body{
                 text-align: center;
                 color: $Light;
                 height: 0;
-                font-size: 28px;
+                font-size: 22px;
                 height: 30px;
                 padding: 3px 0;
             }
@@ -762,7 +762,7 @@ body{
             font-weight: bold;
             float: right;
             margin-right: 30px;
-            font-size: 40px;
+            font-size: 35px;
             position: absolute;
             top: -3px;
             right: 0%;
@@ -784,22 +784,27 @@ body{
                 justify-content: space-evenly;
                 flex-wrap: wrap;
                 display: flex;
-                gap: 30px;
-                background-color:$DarkLight;
+                background-color: $DarkLight;
                 transition: 1s;
-                .inner-div{
+                
+                .product-box{
                     height: 350px;
                     border: 1px solid $Dark;
                     border-radius: 10px;
                     color: $Light;
                     background-color: $DarkLight;
                     position: relative;
+                    margin: 20px auto;
+                    
+                    
                     
                     .imgWrap{
                         height: 200px;
                         width: 280px;
                         overflow: hidden;
                         position: relative;
+                        border-top-right-radius: 10px;
+                        border-top-left-radius: 10px;
                             img{
                                 max-width: 200px;
                                 max-width: 280px;
@@ -807,6 +812,9 @@ body{
                                 top: 50%;
                                 left: 50%;
                                 transform: translate(-50%, -50%);
+                              
+                        overflow: hidden;
+
                             }
                         }
                         h4{
@@ -820,13 +828,14 @@ body{
                         }
                         h6{
                             max-width: 250px; 
-                            height: 150px;
                             text-align: center;   margin: 0 auto; 
                             margin-top: 10px;
                             width: 90%;
+                            font-weight: 100;
+                            line-height: 23px;
                         }
                     }
-                    .priceChart{
+                    .priceCart{
                         border-radius: 10px;
                         width: 70%;
                         height: 44px;
@@ -843,13 +852,29 @@ body{
                         .price{
                             width: 50%;
                             height: 100%;
-                        background-color:$Solid;
+                            background-color:$Solid;
+                            position: relative;
+                            span{
+                                font-size: 25px;
+                                position: absolute;
+                                left: 25px;
+                                top: 6px;
+                            }
 
                         }
-                        .chart{
+                        .cart{
                             width: 50%;
                             height: 100%;
                             background-color: #770e0e;
+                            cursor: pointer;
+                            img{
+                                width: 30px;
+                                height: 30px;
+                                position: absolute;
+                                left: 125px;
+                                top: 6px;
+                                color: white;
+                            }
 
 
                         }
@@ -1188,11 +1213,141 @@ body{
 
 
 
+// body{
+
+// .shop-content{
+//     width: 200px;
+//     height: 300px;
+//     background-color: #ece4e4;
+//     display: flex;
+//     justify-content: space-around;
+//     img{
+//         height: 200px;
+//     }
+//     .product-title{
+//         font-size: 30px;
+//         text-align: center;
+//     }
+//     .price{
+//         text-align: center;
+//         font-size: 30px;
+//     }
+//     .add-cart{
+//         margin-left: 90px;
+//         cursor: pointer;
+//         width: 50px;
+//         height: 50px;
+//     }
+
+// }
+
+// .cart{
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     min-height: 300px;
+//     width: 100%;
+//     position: relative;
+//     padding: 20px;
+//     transition: 0.3s;
 
 
+  
+// }
+// .cart.active{
+//     right: 0;
+// }
+// .cart-title{
+//     text-align: center;
+//     font-size: 30px;
+//     font-weight: bold;
 
+// }
 
+// .cart-box{
+//     display: grid;
+//     grid-template-columns: 32% 50% 18%;
+//     align-items: center;
+//     gap: 1rem;
+//     margin-top: 1rem;
 
+// }
+// .cart-img{
+//     width: 100px;
+//     height: 100px;
+//     object-fit: contain;
+//     padding: 10px;
+
+// }
+// .detail-box{
+//     display: grid;
+//     row-gap: 0.5rem;
+
+// }
+// .cart-product-title{
+//     font-size: 1.5rem;
+//     text-transform: uppercase;
+
+// }
+// .cart-price{
+//     font-weight: 500;
+// }
+
+// .cart-quantity{
+//     border: 1px solid $Dark;
+//     outline-color: $DarkLight;
+//     width: 2.5rem;
+//     text-align: center;
+//     font-size: 1rem;
+// }
+// .cart-remove{
+//     color: #cc1c1c;
+//     font-size: 24px;
+//     cursor: pointer;
+
+// }
+// .total{
+//     width: 100%;
+//     display: flex;
+//     justify-content: flex-end;
+//     margin-top: 1.5rem;
+//     border-top: 1px solid $Dark;
+
+// }
+
+// .total-title{
+//     font-size: 1rem;
+//     font-weight: 600;
+
+// }
+// .total-price{
+//     margin-left: 1rem;
+
+// }
+
+// .btn-buy{
+// margin: 1.5rem auto 0 auto;
+// display: flex;
+// padding: 12px;
+// border: none;
+// background-color: $Dark;
+// color: $Light;
+// font-size: 1rem;
+// font-weight: 500;
+//  cursor: pointer;
+// }
+
+// #close-cart{
+//     position: absolute;
+//     top: 1rem;
+//     right: 1rem;
+//     font-size: 2rem;
+//     cursor: pointer;
+     
+
+// }
+
+// }
 
 // test
 

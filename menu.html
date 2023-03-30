@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +8,17 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=BenchNine:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <script type="module" src="js/header.js"></script>
     <script type="module" src="js/footer.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
     <script src="js/accordion.js" defer></script>
     <script src="js/reservation.js" defer></script>
+    <script src="https://kit.fontawesome.com/e8a8d87892.js" crossorigin="anonymous"></script>
+
+    
 
 
 </head>
@@ -62,8 +63,28 @@
   </div>
 
 <!-- END Menu starter  -->
+<!-- <div class="icn"><img src="/img/chart.png" id="cart-icon" alt="" style="width: 100px; height: 100px; cursor: pointer;"></div>
+<div class="cart">
+  <h2 class="cart-title">your cart</h2>
+  <div class="cart-content">
+    <div class="cart-box">
+      <img src="img/Menu/alcohol/black lion.png" alt="" class="cart-img">
+      <div class="detail-box">
+        <div class="cart-product-title">Earbuds</div>
+        <div class="cart-price">25$</div>
+        <input type="number" value="1" class="cart-quantity">
+      </div>
+       <img class="cart-remove" src="/img/tras.png" alt=""  style="width: 30px; height: 30px;">
+    </div>
+  </div>
+  <div class="total">
+    <div class="total-title">total</div>
+    <div class="total-price">$0</div>
+  </div>
+  <button type="button" class="btn-buy"> buy now</button>
+  <i class="fa-solid fa-x" id="close-cart"></i>
 
-
+</div> -->
 
  
 
@@ -73,51 +94,58 @@
         <h4 class="accordionHead">M E N U</h4>
         <button class="accordion"><p>Main Dishes</p></button>
         <div class="panel">
-          <div class="accordion-body"> 
-            <!-- <div class="inner-div">  <div class="imgWrap"><img src="img/Menu/bjoooo.jpg" alt=""></div> <h4>Chicken BBQ</h4> <h6>ქათმის ხორცი, პომიდვრის სოუსი, ყაბაყი, პომიდორი ჩერი, ხახვის მარინადი. (300გრ)</h6> </div>
-            <div class="inner-div"><img src="img/Menu/Quick Menu/burgeri.webp" alt=""> <h4>Burger</h4> <h6></h6> </div>
-            <div class="inner-div"><img src="img/Menu/Quick Menu/evropuli yvelis asorti.webp" alt=""> <h4>European cheese assortiment</h4> <h6>ქამამბერი, ჩედარი, გაუდა, ლურჯი ყველი, თაფლი, პურის ჩხირები</h6> </div>
-            <div class="inner-div"><img src="img/Menu/Quick Menu/gamomcvari kartofili.webp" alt=""> <h4>Baked Potatoes</h4> <h6>კარტოფილი, შებოლილი სულგუნი, სულგუნი, რაჭული ლორი, ნაღები, ტარხუნა.</h6> </div>
-            <div class="inner-div"><img src="img/Menu/Quick Menu/kartofili fri.webp" alt=""> <h4>French fries</h4> <h6> </h6> </div>
-            <div class="inner-div"><img src="img/Menu/Quick Menu/oragulis rolebi.webp" alt=""> <h4>Salmon Rolls</h4> <h6>ლავაში, შებოლილი ორაგულის ფილე, კრემყველი, ნიგოზი, პიტნა.</h6> </div>
-            <div class="inner-div"><img src="img/Menu/Quick Menu/sendvichi lorit.webp" alt=""> <h4>Sandvich with Ham</h4> <h6>ლორი, ყველი გაუდა, სალათის ფურცელი, პომიდორი, კეტჩუპი, მაიონეზი, კარტოფილი ფრი</h6> </div>
-            <div class="inner-div"><img src="img/Menu/Quick Menu/shemwvari yvelis chxirebi.webp" alt=""> <h4>Fried cheese sticks</h4> <h6>სულგუნი, კვერცხი, ფქვილი, პანკოს ორცხობილა, ტკბილი ჩილის სოუსი</h6> </div>
-            <div class="inner-div"><img src="img/Menu/Quick Menu/yvelis asorti.webp" alt=""> <h4>Traditional cheese asortment</h4> <h6>გუდა, იმერული, სულგუნი, ქარხნულად დამზადებული ყველი, ფიჭა თაფლით, ქართული სალათი.</h6> </div> -->
-            <div class="inner-div">  
-              <div class="priceChart">
-                <div class="price"></div>
-                <div class="chart"></div>              </div>
+          <div class="accordion-body">
+            
+            
+
+
+            <!-- <div class="product-box">  
               <div class="imgWrap">
-                <img src="/img/Menu/bjoooo.jpg" alt="">
+                <img src="/img/Menu/MainDishes/khinkali.jpg" alt="">
               </div> 
-              <h4>shemwvari yverebi</h4>
-              <h6>shesawveli yverebi</h6> 
-          </div>
+              <h4>Khinkali</h4>
+              <h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> 
+                <div class="priceCart">
+                <div class="price"> <span>25 £</span></div>
+                  <div class="cart"> <img src="/img/chart.svg" alt=""> </div>
+                </div>
+              </div> -->
 
-
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
+              <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+              <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/Quick Menu/burgeri.webp" alt=""> </div> <h4>Burger</h4> <h6></h6>  <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+              <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/Quick Menu/evropuli yvelis asorti.webp" alt=""> </div> <h4>European cheese assortiment</h4> <h6>ქამამბერი, ჩედარი, გაუდა, ლურჯი ყველი, თაფლი, პურის ჩხირები</h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+              <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/Quick Menu/gamomcvari kartofili.webp" alt=""> </div> <h4>Baked Potatoes</h4> <h6>კარტოფილი, შებოლილი სულგუნი, სულგუნი, რაჭული ლორი, ნაღები, ტარხუნა.</h6>  <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+              <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/Quick Menu/kartofili fri.webp" alt=""> </div> <h4>French fries</h4> <h6> </h6>  <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+              <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/Quick Menu/oragulis rolebi.webp" alt=""> </div> <h4>Salmon Rolls</h4> <h6>ლავაში, შებოლილი ორაგულის ფილე, კრემყველი, ნიგოზი, პიტნა.</h6>  <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+              <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/Quick Menu/sendvichi lorit.webp" alt=""> </div> <h4>Sandvich with Ham</h4> <h6>ლორი, ყველი გაუდა, სალათის ფურცელი, პომიდორი, კეტჩუპი, მაიონეზი, კარტოფილი ფრი</h6>  <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+              <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/Quick Menu/shemwvari yvelis chxirebi.webp" alt=""> </div> <h4>Fried cheese sticks</h4> <h6>სულგუნი, კვერცხი, ფქვილი, პანკოს ორცხობილა, ტკბილი ჩილის სოუსი</h6>  <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+              <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/Quick Menu/yvelis asorti.webp" alt=""> </div> <h4>Traditional cheese asortment</h4> <h6>გუდა, იმერული, სულგუნი, ქარხნულად დამზადებული ყველი, ფიჭა თაფლით, ქართული სალათი.</h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
           </div> 
         </div>
 
         <button class="accordion"><p>We Reccomend</p></button>
         <div class="panel">
           <div class="accordion-body"> 
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
           </div> 
         </div>
 
         <button class="accordion"><p>Popular Orders</p></button>
         <div class="panel">
           <div class="accordion-body"> 
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
           </div> 
         </div>
         
@@ -125,8 +153,11 @@
         <button class="accordion"><p>10 Minutes </p></button>
         <div class="panel">
           <div class="accordion-body"> 
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
           </div> 
         </div>
 
@@ -134,40 +165,51 @@
         <button class="accordion"><p>Salad</p></button>
         <div class="panel">
           <div class="accordion-body"> 
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
           </div> 
         </div>
 
         <button class="accordion"><p>Vegetarian</p></button>
         <div class="panel">
           <div class="accordion-body"> 
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
           </div> 
         </div>
 
         <button class="accordion"><p>Vegan</p></button>
         <div class="panel">
           <div class="accordion-body"> 
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
           </div> 
         </div>
 
         <button class="accordion"><p>Hot Drinks</p></button>
         <div class="panel">
           <div class="accordion-body"> 
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
           </div> 
         </div>
 
         <button class="accordion"><p>Alcohol Drinks</p></button>
         <div class="panel">
           <div class="accordion-body"> 
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
-            <div class="inner-div">  <div class="imgWrap"><img src="" alt=""></div> <h4></h4> <h6></h6> </div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
+            <div class="product-box">  <div class="imgWrap"><img src="/img/Menu/MainDishes/khinkali.jpg" alt=""></div> <h4>Khinkali</h4><h6>Jucy meat covered by dough and boild in water. The best dumpling in the world    </h6> <div class="priceCart"><div class="price"> <span>25 £</span></div><div class="cart"> <img src="/img/chart.svg" alt=""> </div></div></div>
           </div> 
         </div>
         <h4 class="accordionBottom"></h4>
@@ -249,6 +291,6 @@
 
 
     
-    
+    <script src="js/main.js"></script>
 </body>
 </html>
