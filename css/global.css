@@ -3162,7 +3162,6 @@ body .accordionWrapper .active:after {
 }
 body .accordionWrapper .panel {
   border-top: 2px solid hwb(0 40% 60%);
-  max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
   font-family: "Nunito", sans-serif;
@@ -3172,7 +3171,7 @@ body .accordionWrapper .panel .accordion-body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   background-color: rgba(0, 0, 0, 0.593);
   transition: 1s;
 }
@@ -3180,9 +3179,9 @@ body .accordionWrapper .panel .accordion-body .inner-div {
   height: 350px;
   border: 1px solid rgba(0, 0, 0, 0.863);
   border-radius: 10px;
-  overflow: hidden;
   color: #fffaf7;
   background-color: rgba(0, 0, 0, 0.593);
+  position: relative;
 }
 body .accordionWrapper .panel .accordion-body .inner-div .imgWrap {
   height: 200px;
@@ -3214,6 +3213,30 @@ body .accordionWrapper .panel .accordion-body .inner-div h6 {
   margin: 0 auto;
   margin-top: 10px;
   width: 90%;
+}
+body .accordionWrapper .panel .accordion-body .priceChart {
+  border-radius: 10px;
+  width: 70%;
+  height: 44px;
+  position: absolute;
+  z-index: 1;
+  bottom: -22px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: calc(12px + 0.3vw);
+  overflow: hidden;
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.593);
+}
+body .accordionWrapper .panel .accordion-body .priceChart .price {
+  width: 50%;
+  height: 100%;
+  background-color: #222;
+}
+body .accordionWrapper .panel .accordion-body .priceChart .chart {
+  width: 50%;
+  height: 100%;
+  background-color: #770e0e;
 }
 
 body .overallStory {

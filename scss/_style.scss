@@ -775,7 +775,7 @@ body{
         }        
         .panel{
             border-top: 2px solid hwb(0 40% 60%);
-            max-height: 0;
+            // max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease-out;
             font-family: 'Nunito', sans-serif;
@@ -784,16 +784,17 @@ body{
                 justify-content: space-evenly;
                 flex-wrap: wrap;
                 display: flex;
-                gap: 20px;
+                gap: 30px;
                 background-color:$DarkLight;
                 transition: 1s;
                 .inner-div{
                     height: 350px;
                     border: 1px solid $Dark;
                     border-radius: 10px;
-                    overflow: hidden;
                     color: $Light;
                     background-color: $DarkLight;
+                    position: relative;
+                    
                     .imgWrap{
                         height: 200px;
                         width: 280px;
@@ -825,7 +826,35 @@ body{
                             width: 90%;
                         }
                     }
-            }
+                    .priceChart{
+                        border-radius: 10px;
+                        width: 70%;
+                        height: 44px;
+                        position: absolute;
+                        z-index: 1;
+                        bottom: -22px;
+                        left: 50%;
+                        transform: translate(-50%);
+                        font-size: calc(12px + .3vw);
+                        overflow: hidden;
+                        // align-items: stretch;
+                        display: flex;
+                        border: 2px solid $DarkLight;
+                        .price{
+                            width: 50%;
+                            height: 100%;
+                        background-color:$Solid;
+
+                        }
+                        .chart{
+                            width: 50%;
+                            height: 100%;
+                            background-color: #770e0e;
+
+
+                        }
+                    }
+                }
         }
     }
 }
