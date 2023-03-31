@@ -3125,13 +3125,12 @@ body .accordionWrapper .accordion {
   position: relative;
 }
 body .accordionWrapper .accordion p {
-  color: rgba(0, 0, 0, 0.863);
-  text-align: center;
   color: #fffaf7;
-  height: 0;
-  font-size: 22px;
+  font-size: 18px;
   height: 30px;
-  padding: 3px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .accordionWrapper .accordion h4 {
   display: flex;

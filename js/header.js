@@ -47,22 +47,8 @@
                       </li>
                   </div>
                   <div class="right">
-                      <!-- START Make Reservation button + modal + overlay -->
-                      <a class="buttonR" data-modal-target="#modal">MAKE RESERVATION</a>
-                          <div class="mymodal" id="modal">
-                            <div class="modal-header">
-                              <div class="title">Contact Information</div>
-                              <button data-close-button class="close-button">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                  <P>Call: +46 707174030 </P>
-                                  <p>E-mail: info@ChaCha.com </p>
-                                  <a href="https://goo.gl/maps/QnEjWzULMKhH3H1b9">Address: Praça do Município n23, Lisboa, Portugal</a>
-                                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6226.828782664931!2d-9.1496643!3d38.708294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193479567ac66d%3A0x3eef4fe30fcc5385!2sDelfina-Cantina%20Portuguesa!5e0!3m2!1sen!2sse!4v1679964565066!5m2!1sen!2sse" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                          </div>
-                          <div id="overlay"></div>  
-                      <!-- END Make Reservation button + modal + overlay  -->
+                      <a class="res-btn" ">MAKE RESERVATION</a>
+                          
                   </div>
               </div>
           </div>
