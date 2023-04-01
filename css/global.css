@@ -3131,7 +3131,7 @@ body .accordionWrapper .active:after {
   content: "−";
 }
 body .accordionWrapper .panel {
-  border-top: 2px solid hwb(0 40% 60%);
+  border-top: 2px solid hwb(0deg 40.7% 59.3%);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
