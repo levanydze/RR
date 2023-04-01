@@ -54,7 +54,7 @@
                       </li>
                   </div>
                   <div class="right">
-                      <a class="res-button" id="res-butt" ">MAKE RESERVATION</a>
+                      <a class="reserv-button res-button" >MAKE RESERVATION</a>
                           
                   </div>
               </div>

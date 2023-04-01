@@ -2745,7 +2745,7 @@ body .menuWrapper .wrapper .left li .menuBtn:hover {
 body .menuWrapper .wrapper .left li a {
   color: #fffaf7;
 }
-body .menuWrapper .wrapper .right .res-button {
+body .menuWrapper .wrapper .right .reserv-button {
   min-width: 148px;
   padding: 0px 5px;
   border: 2px solid #fffaf7;
@@ -2762,7 +2762,7 @@ body .menuWrapper .wrapper .right .res-button {
   cursor: pointer;
   font-weight: bold;
 }
-body .menuWrapper .wrapper .right .res-button::before {
+body .menuWrapper .wrapper .right .reserv-button::before {
   content: "";
   width: 0;
   height: 103%;
@@ -2775,10 +2775,10 @@ body .menuWrapper .wrapper .right .res-button::before {
   display: block;
   z-index: -1;
 }
-body .menuWrapper .wrapper .right .res-button:hover::before {
+body .menuWrapper .wrapper .right .reserv-button:hover::before {
   width: 105%;
 }
-body .menuWrapper .wrapper .right .res-button:hover {
+body .menuWrapper .wrapper .right .reserv-button:hover {
   color: #111;
 }
 body .reservation-modal-bg {
@@ -2794,6 +2794,7 @@ body .reservation-modal-bg {
   visibility: hidden;
   opacity: 0;
   z-index: 1000;
+  transition: visibility 0.2s, opacity 0.3s;
 }
 body .reservation-modal-bg .res-modal {
   background-color: #fffaf7;

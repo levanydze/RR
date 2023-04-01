@@ -231,7 +231,7 @@ body{
                     
                 } 
                 .right{
-                    .res-button {
+                    .reserv-button {
                         min-width: 148px;
                         padding: 0px 5px;
                         border: 2px solid $Light;
@@ -249,7 +249,7 @@ body{
                         font-weight: bold;
                     }
                     
-                    .res-button::before {
+                    .reserv-button::before {
                         content: '';
                         width: 0;
                         height: 103%;
@@ -263,11 +263,11 @@ body{
                         z-index: -1;
                     }
                     
-                    .res-button:hover::before {
+                    .reserv-button:hover::before {
                         width: 105%;
                     }
                     
-                    .res-button:hover {
+                    .reserv-button:hover {
                         color: #111;
                     }
                     
@@ -293,6 +293,7 @@ body{
         visibility: hidden;
         opacity: 0;
         z-index: 1000;
+        transition:  visibility 0.2s, opacity 0.3s;
        
     
         .res-modal{
