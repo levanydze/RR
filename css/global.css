@@ -3097,7 +3097,7 @@ body .accordionWrapper .accordion {
 }
 body .accordionWrapper .accordion p {
   color: #fffaf7;
-  font-size: 18px;
+  font-size: 20px;
   height: 30px;
   display: flex;
   justify-content: center;
@@ -3455,6 +3455,14 @@ body .subscribeDiv .subscribeWrapper .subscribeInput {
   height: 50px;
   border: none;
   border: 2px solid rgba(0, 0, 0, 0.593);
+  border-radius: 7px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+body .subscribeDiv .subscribeWrapper .subscribeInput:focus {
+  border: none;
+  border-color: none;
+  outline: none;
 }
 body .subscribeDiv .subscribeWrapper .subscribeButton {
   height: 50px;

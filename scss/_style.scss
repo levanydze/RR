@@ -701,7 +701,7 @@ body{
             position: relative;
             p{
                 color: $Light;
-                font-size: 18px;
+                font-size: 20px;
                 height: 30px;
                 display: flex;
                 justify-content: center;
@@ -1151,7 +1151,15 @@ body{
             height: 50px;
             border: none;
             border: 2px solid $DarkLight;
+            border-radius: 7px;
+            padding-left: 10px;
+            font-size: 18px;
+        }
 
+        .subscribeInput:focus{
+            border: none;
+            border-color: none;
+            outline: none;
         }
         .subscribeButton{
             height: 50px;
