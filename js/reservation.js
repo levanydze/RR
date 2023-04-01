@@ -1,38 +1,25 @@
+var modalBtn = document.querySelector('.res-button');
+var modalBg = document.querySelector('.reservation-modal-bg');
+var modalClose = document.querySelector('.res-close-btn');
 
 
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
+modalBtn.addEventListener('click', function () {
+    modalBg.classList.add('res-modal-bg-active');
+});
 
-openModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
-})
+modalClose.addEventListener('click', function(){
+    modalBg.classList.remove('res-modal-bg-active');
+});
 
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.mymodal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
-  })
-})
 
-closeModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.mymodal')
-    closeModal(modal)
-  })
-})
+var resBtn = document.querySelector('.res_button');
+var resBg = document.querySelector('.reservation-modal-bg');
+var resClose = document.querySelector('.res-close-btn');
 
-function openModal(modal) {
-  if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
-}
 
-function closeModal(modal) {
-  if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
-}
+resBtn.addEventListener('click', function(){
+  resBg.add.classList('res-moda-bg-active');
+});
+resClose.addEventListener('click', function(){
+  resClose.remove.classList('res-moda-bg-active');
+});
