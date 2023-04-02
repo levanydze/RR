@@ -2833,8 +2833,18 @@ body .res-modal-bg-active {
   opacity: 1;
 }
 
-body .sliderWrapper .myslider img {
-  width: 100%;
+body .slider-wrapper {
+  margin: 60px auto 0 auto;
+  display: flex;
+  height: 500px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.593);
+  justify-content: center;
+  align-items: center;
+}
+body .slider-wrapper h2 {
+  font-size: 50px;
+  text-align: center;
 }
 body .sideWrapper {
   width: 90%;

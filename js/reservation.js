@@ -12,14 +12,3 @@ modalClose.addEventListener('click', function(){
 });
 
 
-var resBtn = document.querySelector('.res_button');
-var resBg = document.querySelector('.reservation-modal-bg');
-var resClose = document.querySelector('.res-close-btn');
-
-
-resBtn.addEventListener('click', function(){
-  resBg.add.classList('res-moda-bg-active');
-});
-resClose.addEventListener('click', function(){
-  resClose.remove.classList('res-moda-bg-active');
-});
