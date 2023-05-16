@@ -2550,27 +2550,101 @@ a {
   background-color: rgb(65, 65, 65);
 }
 
-body .overlayImg {
-  position: absolute;
-  transition: 200ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-  height: 100%;
+body .footer {
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.863);
+  padding: 50px 0;
 }
-body .undermenu {
-  height: 50px;
-  width: 100%;
-}
-body .mycontainer {
-  width: 96%;
+body .footer .footerWrapp {
   margin: 0 auto;
-  max-width: 1350px;
+  display: flex;
+  width: 80%;
 }
+body .footer .footerWrapp .footerSections {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+}
+body .footer .footerWrapp .footerSections .sectionAddress {
+  width: 25%;
+  color: #fffaf7;
+}
+body .footer .footerWrapp .footerSections .sectionAddress h4 {
+  padding-bottom: 30px;
+  font-size: 35px;
+}
+body .footer .footerWrapp .footerSections .sectionAddress p {
+  padding-top: 10px;
+  color: #fffaf7;
+}
+body .footer .footerWrapp .footerSections .sectionAddress p:nth-child(4) {
+  padding-top: 50px;
+}
+body .footer .footerWrapp .footerSections .section {
+  width: 25%;
+  color: #fffaf7;
+}
+body .footer .footerWrapp .footerSections .section h4 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+body .footer .footerWrapp .footerSections .section p:nth-child(5) {
+  padding-top: 50px;
+}
+body .footer .footerWrapp .footerSections .section p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+body .subscribeDiv {
+  background-color: rgba(0, 0, 0, 0.863);
+  width: 100%;
+}
+body .subscribeDiv h4 {
+  color: #fffaf7;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+body .subscribeDiv .subscribeWrapper {
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+}
+body .subscribeDiv .subscribeWrapper .subscribeInput {
+  width: 400%;
+  max-width: 600px;
+  height: 50px;
+  border: none;
+  border: 2px solid rgba(0, 0, 0, 0.593);
+  border-radius: 7px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+body .subscribeDiv .subscribeWrapper .subscribeInput:focus {
+  border: none;
+  border-color: none;
+  outline: none;
+}
+body .subscribeDiv .subscribeWrapper .subscribeButton {
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+  background: none;
+  border: none;
+  width: 100px;
+  transition: 0.5s;
+  border-left: 2px solid rgba(0, 0, 0, 0.593);
+  font-size: 20px;
+}
+body .subscribeDiv .subscribeWrapper .subscribeButton:hover {
+  background-color: rgba(0, 0, 0, 0.593);
+  color: rgba(0, 0, 0, 0.863);
+}
+
 body .navvv {
   @import url(https://fonts.googleapis.com/css?family=Raleway);
 }
@@ -2781,6 +2855,28 @@ body .menuWrapper .wrapper .right .reserv-button:hover::before {
 body .menuWrapper .wrapper .right .reserv-button:hover {
   color: #111;
 }
+
+body .overlayImg {
+  position: absolute;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+body .undermenu {
+  height: 50px;
+  width: 100%;
+}
+body .mycontainer {
+  width: 96%;
+  margin: 0 auto;
+  max-width: 1350px;
+}
 body .reservation-modal-bg {
   position: fixed;
   top: 0;
@@ -2843,12 +2939,6 @@ body .carousel-wrapper {
 }
 body .carousel-wrapper h2 {
   font-size: 50px;
-}
-body h2 {
-  text-align: center;
-  padding: 40px;
-  font-size: 50px;
-  text-transform: capitalize;
 }
 body .sideWrapper {
   width: 90%;
@@ -2973,49 +3063,48 @@ body .threeWrapper .threeImgBox img {
   max-height: 425px;
   height: 100%;
 }
-body .head-photo-wrapper {
-  max-height: 500px;
-  display: flex;
+body .kitchenWrapper {
+  padding: 0 0 40px 0;
+  font-family: "Raleway", sans-serif;
+}
+body .kitchenWrapper .imgWrapper {
+  margin-bottom: 40px;
   position: relative;
 }
-body .head-photo-wrapper img {
-  -o-object-fit: cover;
-     object-fit: cover;
+body .kitchenWrapper .imgWrapper .kitchenImg {
+  position: relative;
 }
-body .head-photo-wrapper .h5 {
+body .kitchenWrapper .imgWrapper .kitchenImg img {
+  width: 100%;
+}
+body .kitchenWrapper .imgWrapper .kitchenImg h5 {
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   position: absolute;
   left: 50%;
   top: 80%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  text-align: center;
-  line-height: 50px;
-  height: 100%;
-  width: 100%;
+}
+body .kitchenWrapper .kitchenTextWrapper {
   display: flex;
-  flex-flow: column;
-  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: space-between;
 }
-body .head-photo-wrapper .web-wrapper {
-  width: 100%;
-  position: relative;
+body .kitchenWrapper .kitchenTextWrapper .textBoxes {
+  width: 30%;
 }
-body .head-photo-wrapper .web-wrapper img {
-  width: 100%;
-  height: 100%;
+body .kitchenWrapper .kitchenTextWrapper .textBoxes h3 {
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 20px;
 }
-body .head-photo-wrapper .photography-wrapper {
-  width: 50%;
-  position: relative;
+body .kitchenWrapper .kitchenTextWrapper .textBoxes h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
 }
-body .head-photo-wrapper .photography-wrapper img {
-  width: 100%;
-  height: 100%;
-}
-
 body .menuStarter {
   width: 100%;
   display: flex;
@@ -3404,100 +3493,6 @@ body .map .mapWrapper .mapText .text p {
 body .map .mapWrapper .mapDiv {
   width: 65%;
   height: 600px;
-}
-body .footer {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.863);
-  padding: 50px 0;
-}
-body .footer .footerWrapp {
-  margin: 0 auto;
-  display: flex;
-  width: 80%;
-}
-body .footer .footerWrapp .footerSections {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  width: 100%;
-}
-body .footer .footerWrapp .footerSections .sectionAddress {
-  width: 25%;
-  color: #fffaf7;
-}
-body .footer .footerWrapp .footerSections .sectionAddress h4 {
-  padding-bottom: 30px;
-  font-size: 35px;
-}
-body .footer .footerWrapp .footerSections .sectionAddress p {
-  padding-top: 10px;
-  color: #fffaf7;
-}
-body .footer .footerWrapp .footerSections .sectionAddress p:nth-child(4) {
-  padding-top: 50px;
-}
-body .footer .footerWrapp .footerSections .section {
-  width: 25%;
-  color: #fffaf7;
-}
-body .footer .footerWrapp .footerSections .section h4 {
-  font-size: 30px;
-  padding-bottom: 30px;
-}
-body .footer .footerWrapp .footerSections .section p:nth-child(5) {
-  padding-top: 50px;
-}
-body .footer .footerWrapp .footerSections .section p {
-  font-size: 15px;
-  padding-top: 10px;
-}
-body .subscribeDiv {
-  background-color: rgba(0, 0, 0, 0.863);
-  width: 100%;
-}
-body .subscribeDiv h4 {
-  color: #fffaf7;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 20px;
-}
-body .subscribeDiv .subscribeWrapper {
-  margin: 0 auto;
-  width: 80%;
-  position: relative;
-  overflow: hidden;
-  max-width: 600px;
-}
-body .subscribeDiv .subscribeWrapper .subscribeInput {
-  width: 400%;
-  max-width: 600px;
-  height: 50px;
-  border: none;
-  border: 2px solid rgba(0, 0, 0, 0.593);
-  border-radius: 7px;
-  padding-left: 10px;
-  font-size: 18px;
-}
-body .subscribeDiv .subscribeWrapper .subscribeInput:focus {
-  border: none;
-  border-color: none;
-  outline: none;
-}
-body .subscribeDiv .subscribeWrapper .subscribeButton {
-  height: 50px;
-  position: absolute;
-  right: 0px;
-  z-index: 1;
-  background: none;
-  border: none;
-  width: 100px;
-  transition: 0.5s;
-  border-left: 2px solid rgba(0, 0, 0, 0.593);
-  font-size: 20px;
-}
-body .subscribeDiv .subscribeWrapper .subscribeButton:hover {
-  background-color: rgba(0, 0, 0, 0.593);
-  color: rgba(0, 0, 0, 0.863);
 }
 
 @media (max-width: 1000px) {

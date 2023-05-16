@@ -1,0 +1,104 @@
+body{
+     // START foot
+    .footer {
+        width: 100%;
+        background-color: $Dark;
+        padding: 50px 0;
+        .footerWrapp {
+            margin: 0 auto;
+            display: flex;
+            width: 80%;
+            .footerSections {
+                display: flex;
+                justify-content: space-around;
+                align-content: center;
+                width: 100%;
+
+                .sectionAddress {
+                    width: 25%;
+                    color: $Light;
+                    h4 {
+                        padding-bottom: 30px;
+                        font-size: 35px;
+                    }
+
+                    p {
+                        padding-top: 10px;
+                        color: $Light;
+                    }
+
+                    p:nth-child(4) {
+                        padding-top: 50px;
+                    }
+                }
+                .section {
+                    width: 25%;
+                    color: $Light;
+                    h4 {
+                        font-size: 30px;
+                        padding-bottom: 30px;
+                    }
+                    p:nth-child(5) {
+                        padding-top: 50px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .subscribeDiv {
+        h4 {
+            color: $Light;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+        background-color: $Dark;
+        width: 100%;
+        .subscribeWrapper {
+            margin: 0 auto;
+            width: 80%;
+            position: relative;
+            overflow: hidden;
+            max-width: 600px;
+
+            .subscribeInput {
+                width: 400%;
+                max-width: 600px;
+                height: 50px;
+                border: none;
+                border: 2px solid $DarkLight;
+                border-radius: 7px;
+                padding-left: 10px;
+                font-size: 18px;
+            }
+
+            .subscribeInput:focus {
+                border: none;
+                border-color: none;
+                outline: none;
+            }
+            .subscribeButton {
+                height: 50px;
+                position: absolute;
+                right: 0px;
+                z-index: 1;
+                background: none;
+                border: none;
+                width: 100px;
+                transition: 0.5s;
+                border-left: 2px solid $DarkLight;
+                font-size: 20px;
+            }
+            .subscribeButton:hover {
+                background-color: $DarkLight;
+                color: $Dark;
+            }
+        }
+    }
+    // END foot
+}

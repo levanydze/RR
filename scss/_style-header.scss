@@ -1,0 +1,240 @@
+body{
+        //START BURGER MENU
+        .navvv {
+            .top-nav {
+                .logoText {
+                    color: $Light;
+                }
+            }
+            .wrap {
+                background-color: #222;
+            }
+            @import url(https://fonts.googleapis.com/css?family=Raleway);
+            h2 {
+                vertical-align: center;
+                text-align: center;
+            }
+            .top-nav {
+                position: fixed;
+                width: 100%;
+                z-index: 99999;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                background-color: $Dark;
+                backdrop-filter: blur(5px);
+                font-family: "BenchNine", sans-serif;
+                font-size: 25px;
+    
+                //   background: linear-gradient(to left, #f46b45, #eea849);
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                color: #fff;
+                height: 50px;
+                padding: 1em;
+            }
+    
+            .menu {
+                a {
+                    color: $Light;
+                }
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                .menuLi {
+                    align-items: center;
+                }
+            }
+    
+            .menu > li {
+                margin: 0 1rem;
+                overflow: hidden;
+            }
+    
+            .menu-button-container {
+                display: none;
+                height: 100%;
+                width: 30px;
+                cursor: pointer;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            #menu-toggle {
+                display: none;
+            }
+    
+            .menu-button,
+            .menu-button::before,
+            .menu-button::after {
+                display: block;
+                background-color: #fff;
+                position: absolute;
+                height: 4px;
+                width: 30px;
+                transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+                border-radius: 2px;
+            }
+    
+            .menu-button::before {
+                content: "";
+                margin-top: -8px;
+            }
+    
+            .menu-button::after {
+                content: "";
+                margin-top: 8px;
+            }
+    
+            #menu-toggle:checked + .menu-button-container .menu-button::before {
+                margin-top: 0px;
+                transform: rotate(405deg);
+            }
+    
+            #menu-toggle:checked + .menu-button-container .menu-button {
+                background: #222222; // third stick color
+                backdrop-filter: blur(10px);
+            }
+    
+            #menu-toggle:checked + .menu-button-container .menu-button::after {
+                margin-top: 0px;
+                transform: rotate(-405deg);
+            }
+    
+            @media (max-width: 700px) {
+                .menu-button-container {
+                    display: flex;
+                }
+                .menu {
+                    position: absolute;
+                    top: 0;
+                    margin-top: 50px;
+                    left: 0;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                }
+                #menu-toggle ~ .menu li {
+                    height: 0;
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+                }
+                #menu-toggle:checked ~ .menu li:first-child {
+                    border-top: 2px solid #333;
+                }
+                #menu-toggle:checked ~ .menu li {
+                    border-bottom: 2px solid #333;
+                    height: 2.5em;
+                    padding: 0.5em;
+                    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+                    background-color: red($color: #cc1c1c);
+                }
+                .menu > li {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+                    padding: 0.5em 0;
+                    width: 100%;
+                    color: white;
+                    background-color: $Solid;
+                }
+                .menu > li:not(:last-child) {
+                }
+            }
+        }
+        //END BURGER MENU
+    
+        //START Navigation
+        .menuWrapper {
+            height: 50px;
+            width: 100%;
+            background-color: $Dark;
+            backdrop-filter: blur(10px);
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            .wrapper {
+                width: 95%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                display: flex;
+                margin: 0 auto;
+    
+                .left {
+                    width: 30%;
+                    font-family: "BenchNine", sans-serif;
+                    font-size: 30px;
+                    font-weight: bolder;
+    
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        font-size: 25px;
+    
+                        .menuBtn {
+                            transition: 0.5s;
+                        }
+                        .menuBtn:hover {
+                            color: rgb(112, 112, 112);
+                        }
+    
+                        a {
+                            color: $Light;
+                        }
+                    }
+                }
+                .right {
+                    .reserv-button {
+                        min-width: 148px;
+                        padding: 0px 5px;
+                        border: 2px solid $Light;
+                        position: relative;
+                        overflow: hidden;
+                        background-color: transparent;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-size: 22px;
+                        transition: 0.3s;
+                        z-index: 1;
+                        font-family: "BenchNine", sans-serif;
+                        color: $Light;
+                        cursor: pointer;
+                        font-weight: bold;
+                    }
+    
+                    .reserv-button::before {
+                        content: "";
+                        width: 0;
+                        height: 103%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background: $Light;
+                        transition: 0.5s ease;
+                        display: block;
+                        z-index: -1;
+                    }
+    
+                    .reserv-button:hover::before {
+                        width: 105%;
+                    }
+    
+                    .reserv-button:hover {
+                        color: #111;
+                    }
+                }
+            }
+        }
+        //END Navigation
+}
