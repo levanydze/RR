@@ -2598,7 +2598,7 @@ body .navvv .top-nav {
   font-family: "BenchNine", sans-serif;
   font-size: 25px;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFF;
+  color: #fff;
   height: 50px;
   padding: 1em;
 }
@@ -2792,7 +2792,7 @@ body .reservation-modal-bg {
   justify-content: center;
   align-items: center;
   visibility: hidden;
-  opacity: 0;
+  opacity: 1;
   z-index: 1000;
   transition: visibility 0.2s, opacity 0.3s;
 }
@@ -2843,6 +2843,12 @@ body .carousel-wrapper {
 }
 body .carousel-wrapper h2 {
   font-size: 50px;
+}
+body h2 {
+  text-align: center;
+  padding: 40px;
+  font-size: 50px;
+  text-transform: capitalize;
 }
 body .sideWrapper {
   width: 90%;
@@ -2919,6 +2925,7 @@ body .threeWrapper .threeTextBox p {
   font-size: 16px;
 }
 body .threeWrapper .threeTextBox .threeReservation {
+  cursor: pointer;
   scale: 1.2;
 }
 body .threeWrapper .threeTextBox .threeReservation button {
@@ -2966,48 +2973,49 @@ body .threeWrapper .threeImgBox img {
   max-height: 425px;
   height: 100%;
 }
-body .kitchenWrapper {
-  padding: 0 0 40px 0;
-  font-family: "Raleway", sans-serif;
-}
-body .kitchenWrapper .imgWrapper {
-  margin-bottom: 40px;
+body .head-photo-wrapper {
+  max-height: 500px;
+  display: flex;
   position: relative;
 }
-body .kitchenWrapper .imgWrapper .kitchenImg {
-  position: relative;
+body .head-photo-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-body .kitchenWrapper .imgWrapper .kitchenImg img {
-  width: 100%;
-}
-body .kitchenWrapper .imgWrapper .kitchenImg h5 {
+body .head-photo-wrapper .h5 {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   position: absolute;
   left: 50%;
   top: 80%;
   transform: translate(-50%, -50%);
   z-index: 2;
-}
-body .kitchenWrapper .kitchenTextWrapper {
+  text-align: center;
+  line-height: 50px;
+  height: 100%;
+  width: 100%;
   display: flex;
-  margin: 0 auto;
-  width: 80%;
-  justify-content: space-between;
+  flex-flow: column;
+  justify-content: space-evenly;
 }
-body .kitchenWrapper .kitchenTextWrapper .textBoxes {
-  width: 30%;
+body .head-photo-wrapper .web-wrapper {
+  width: 100%;
+  position: relative;
 }
-body .kitchenWrapper .kitchenTextWrapper .textBoxes h3 {
-  font-weight: bold;
-  font-size: 25px;
-  padding-bottom: 20px;
+body .head-photo-wrapper .web-wrapper img {
+  width: 100%;
+  height: 100%;
 }
-body .kitchenWrapper .kitchenTextWrapper .textBoxes h4 {
-  font-size: 20px;
-  padding-bottom: 10px;
+body .head-photo-wrapper .photography-wrapper {
+  width: 50%;
+  position: relative;
 }
+body .head-photo-wrapper .photography-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
 body .menuStarter {
   width: 100%;
   display: flex;
@@ -3121,7 +3129,8 @@ body .accordionWrapper .accordion h4 {
   text-align: center;
   color: #fffaf7;
 }
-body .accordionWrapper .active, body .accordionWrapper .accordion:hover {
+body .accordionWrapper .active,
+body .accordionWrapper .accordion:hover {
   background-color: rgba(0, 0, 0, 0.593);
 }
 body .accordionWrapper .accordion:after {
@@ -3293,7 +3302,9 @@ body .contactForm .contactFormWrapper {
 body .contactForm .contactFormWrapper label {
   padding-left: 5px;
 }
-body .contactForm .contactFormWrapper input[type=text], body .contactForm .contactFormWrapper select, body .contactForm .contactFormWrapper textarea {
+body .contactForm .contactFormWrapper input[type=text],
+body .contactForm .contactFormWrapper select,
+body .contactForm .contactFormWrapper textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
@@ -3301,7 +3312,7 @@ body .contactForm .contactFormWrapper input[type=text], body .contactForm .conta
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical;
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 body .contactForm .contactFormWrapper input[type=submit] {
   background-color: rgba(0, 0, 0, 0.863);

@@ -1,48 +1,45 @@
 //   ====== START Header - Footer ======  //
-body{
-
+body {
     // START ELEMENTS
-        .overlayImg{ 
-            position: absolute;
-            transition: 200ms ease-in-out;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, .4);
-            z-index: 1;
-            height: 100%;
-            width: 100%;
-        }
-        .undermenu{
-            height: 50px;
-            width: 100%;
-        }
-        .mycontainer{
-            width: 96%;
-            margin: 0 auto;
-            max-width: 1350px;
-        }
+    .overlayImg {
+        position: absolute;
+        transition: 200ms ease-in-out;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+    }
+    .undermenu {
+        height: 50px;
+        width: 100%;
+    }
+    .mycontainer {
+        width: 96%;
+        margin: 0 auto;
+        max-width: 1350px;
+    }
     // END ELEMENTS
 
-
     //START BURGER MENU
-        .navvv{
-            .top-nav{
-                .logoText{
-                    color: $Light;
-                }
+    .navvv {
+        .top-nav {
+            .logoText {
+                color: $Light;
             }
-            .wrap{
-
-                background-color: #222;
-            }
-            @import url(https://fonts.googleapis.com/css?family=Raleway);
-            h2 {
+        }
+        .wrap {
+            background-color: #222;
+        }
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+        h2 {
             vertical-align: center;
             text-align: center;
-            }
-            .top-nav {
+        }
+        .top-nav {
             position: fixed;
             width: 100%;
             z-index: 99999;
@@ -52,93 +49,91 @@ body{
             justify-content: space-between;
             background-color: $Dark;
             backdrop-filter: blur(5px);
-            font-family: 'BenchNine', sans-serif;
+            font-family: "BenchNine", sans-serif;
             font-size: 25px;
-
 
             //   background: linear-gradient(to left, #f46b45, #eea849);
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            color: #FFF;
+            color: #fff;
             height: 50px;
             padding: 1em;
-            }
+        }
 
-            .menu {
-                a{color: $Light;}
-                display: flex;
-                flex-direction: row;
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                .menuLi{
-                    align-items: center;
-                }
+        .menu {
+            a {
+                color: $Light;
             }
-
-            .menu > li {
-                margin: 0 1rem;
-                overflow: hidden;
-            }
-
-            .menu-button-container {
-                display: none;
-                height: 100%;
-                width: 30px;
-                cursor: pointer;
-                flex-direction: column;
-                justify-content: center;
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            .menuLi {
                 align-items: center;
             }
+        }
 
-            #menu-toggle {
-                display: none;  
-            }
+        .menu > li {
+            margin: 0 1rem;
+            overflow: hidden;
+        }
 
-            .menu-button,
-            .menu-button::before,
-            .menu-button::after {
-                display: block;
-                background-color: #fff;
-                position: absolute;
-                height: 4px;
-                width: 30px;
-                transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-                border-radius: 2px;
-            }
+        .menu-button-container {
+            display: none;
+            height: 100%;
+            width: 30px;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-            .menu-button::before {
-            content: '';
-                margin-top: -8px;
-            }
+        #menu-toggle {
+            display: none;
+        }
 
-            .menu-button::after {
-            content: '';
-                margin-top: 8px;
-            }
+        .menu-button,
+        .menu-button::before,
+        .menu-button::after {
+            display: block;
+            background-color: #fff;
+            position: absolute;
+            height: 4px;
+            width: 30px;
+            transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+            border-radius: 2px;
+        }
 
-            #menu-toggle:checked + .menu-button-container .menu-button::before {
-                margin-top: 0px;
-                transform: rotate(405deg);
+        .menu-button::before {
+            content: "";
+            margin-top: -8px;
+        }
 
-            }
+        .menu-button::after {
+            content: "";
+            margin-top: 8px;
+        }
 
-            #menu-toggle:checked + .menu-button-container .menu-button {
-                background: #222222; // third stick color
-                backdrop-filter: blur(10px);
+        #menu-toggle:checked + .menu-button-container .menu-button::before {
+            margin-top: 0px;
+            transform: rotate(405deg);
+        }
 
-            }
+        #menu-toggle:checked + .menu-button-container .menu-button {
+            background: #222222; // third stick color
+            backdrop-filter: blur(10px);
+        }
 
-            #menu-toggle:checked + .menu-button-container .menu-button::after {
-                margin-top: 0px;
-                transform: rotate(-405deg);
-            }
-            
+        #menu-toggle:checked + .menu-button-container .menu-button::after {
+            margin-top: 0px;
+            transform: rotate(-405deg);
+        }
 
-            @media (max-width: 700px) {
-                .menu-button-container {
+        @media (max-width: 700px) {
+            .menu-button-container {
                 display: flex;
-                }
-                .menu {
+            }
+            .menu {
                 position: absolute;
                 top: 0;
                 margin-top: 50px;
@@ -147,25 +142,25 @@ body{
                 width: 100%;
                 justify-content: center;
                 align-items: center;
-                }
-                #menu-toggle ~ .menu li {
+            }
+            #menu-toggle ~ .menu li {
                 height: 0;
                 margin: 0;
                 padding: 0;
                 border: 0;
                 transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-                }
-                #menu-toggle:checked ~ .menu li:first-child {
+            }
+            #menu-toggle:checked ~ .menu li:first-child {
                 border-top: 2px solid #333;
-                }
-                #menu-toggle:checked ~ .menu li {
+            }
+            #menu-toggle:checked ~ .menu li {
                 border-bottom: 2px solid #333;
                 height: 2.5em;
                 padding: 0.5em;
                 transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
                 background-color: red($color: #cc1c1c);
-                }
-                .menu > li {
+            }
+            .menu > li {
                 display: flex;
                 justify-content: center;
                 margin: 0;
@@ -173,297 +168,264 @@ body{
                 width: 100%;
                 color: white;
                 background-color: $Solid;
-                }
-                .menu > li:not(:last-child) {
-                }
             }
-            
+            .menu > li:not(:last-child) {
+            }
         }
+    }
     //END BURGER MENU
 
-
-
-
     //START Navigation
-        .menuWrapper{
+    .menuWrapper {
+        height: 50px;
+        width: 100%;
+        background-color: $Dark;
+        backdrop-filter: blur(10px);
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        .wrapper {
+            width: 95%;
             height: 50px;
-            width: 100%;
-            background-color: $Dark;
-            backdrop-filter: blur(10px);
-            position: fixed;
-            z-index: 999;
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            .wrapper{
+            display: flex;
+            margin: 0 auto;
 
+            .left {
+                width: 30%;
+                font-family: "BenchNine", sans-serif;
+                font-size: 30px;
+                font-weight: bolder;
 
-                width: 95%;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                display: flex;
-                margin: 0 auto;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    font-size: 25px;
 
-                .left{
-                    width: 30%;
-                    font-family: 'BenchNine', sans-serif;
-                    font-size: 30px;
-                    font-weight: bolder;
-            
-                    li{
-                        display: flex;
-                        justify-content: space-between;
-                        width: 100%;
-                        font-size: 25px;
-
-                        .menuBtn {
-                            transition: 0.5s;
-                        }
-                        .menuBtn:hover {
-                            color: rgb(112, 112, 112);
-                        }
-
-                        a{
-                            color: $Light;
-                        }
+                    .menuBtn {
+                        transition: 0.5s;
                     }
-                    
-                } 
-                .right{
-                    .reserv-button {
-                        min-width: 148px;
-                        padding: 0px 5px;
-                        border: 2px solid $Light;
-                        position: relative;
-                        overflow: hidden;
-                        background-color: transparent;
-                        text-align: center;
-                        text-transform: uppercase;
-                        font-size: 22px;
-                        transition: .3s;
-                        z-index: 1;
-                        font-family: 'BenchNine', sans-serif;
+                    .menuBtn:hover {
+                        color: rgb(112, 112, 112);
+                    }
+
+                    a {
                         color: $Light;
-                        cursor: pointer;
-                        font-weight: bold;
                     }
-                    
-                    .reserv-button::before {
-                        content: '';
-                        width: 0;
-                        height: 103%;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%) ;
-                        background:$Light;
-                        transition: .5s ease;
-                        display: block;
-                        z-index: -1;
-                    }
-                    
-                    .reserv-button:hover::before {
-                        width: 105%;
-                    }
-                    
-                    .reserv-button:hover {
-                        color: #111;
-                    }
-                    
-                }       
-            }  
+                }
+            }
+            .right {
+                .reserv-button {
+                    min-width: 148px;
+                    padding: 0px 5px;
+                    border: 2px solid $Light;
+                    position: relative;
+                    overflow: hidden;
+                    background-color: transparent;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 22px;
+                    transition: 0.3s;
+                    z-index: 1;
+                    font-family: "BenchNine", sans-serif;
+                    color: $Light;
+                    cursor: pointer;
+                    font-weight: bold;
+                }
+
+                .reserv-button::before {
+                    content: "";
+                    width: 0;
+                    height: 103%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: $Light;
+                    transition: 0.5s ease;
+                    display: block;
+                    z-index: -1;
+                }
+
+                .reserv-button:hover::before {
+                    width: 105%;
+                }
+
+                .reserv-button:hover {
+                    color: #111;
+                }
+            }
         }
+    }
     //END Navigation
 
-
-
-
     // START MODAL
-    .reservation-modal-bg{
+    .reservation-modal-bg {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(0, 0, 0, 0.5);
         display: flex;
         justify-content: center;
         align-items: center;
         visibility: hidden;
-        opacity: 0;
+        opacity: 1;
         z-index: 1000;
-        transition:  visibility 0.2s, opacity 0.3s;
-       
-    
-        .res-modal{
+        transition: visibility 0.2s, opacity 0.3s;
+
+        .res-modal {
             background-color: $Light;
             width: 70%;
             height: 60%;
             padding: 20px;
             position: relative;
             border-radius: 10px;
-    
-            .res-close-btn{
+
+            .res-close-btn {
                 position: absolute;
                 top: 10px;
                 right: 15px;
                 scale: 1.2;
                 cursor: pointer;
-                }
-    
-    
-            .res-modal-head{
+            }
+
+            .res-modal-head {
                 text-align: center;
                 border-bottom: 2px solid $DarkLight;
                 padding-bottom: 15px;
                 margin-bottom: 20px;
                 font-size: 20px;
                 font-weight: 300;
-    
             }
-            .res-modal-boday{
+            .res-modal-boday {
                 text-align: center;
-                p{
+                p {
                     padding-bottom: 10px;
                 }
-                a{
+                a {
                     padding-bottom: 10px;
                 }
             }
         }
     }
-    
-    .res-modal-bg-active{
+
+    .res-modal-bg-active {
         visibility: visible;
         opacity: 1;
     }
     // END MODAL
-}    
+}
 //   ====== END Header - Footer ======  //
 
-
-
-
-
-
 //   ====== START HOME  ======  //
-body{
-.carousel-wrapper{
-    display: flex;
-    height: 500px;
-    width: 100%;
-    background-color: $DarkLight;
-    justify-content: center;
-    align-items: center;
-    h2{
-        font-size: 50px;
+body {
+    .carousel-wrapper {
+        display: flex;
+        height: 500px;
+        width: 100%;
+        background-color: $DarkLight;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            font-size: 50px;
+        }
     }
-}
-    //END SLIDER 
+    //END SLIDER
 
+    // START SIDEbySIDE
+    .sideWrapper {
+        width: 90%;
+        margin: 150px auto;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Raleway", sans-serif;
+        font-weight: 100;
 
-
-    // START SIDEbySIDE 
-        .sideWrapper{
-            width: 90%;
-            margin: 150px auto;
+        .sidePhoto {
+            width: 100%;
             display: flex;
-            justify-content: space-between;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-
-            .sidePhoto{
-                width: 100%;
-                display: flex;
-                img{
-                    width: 80%;
-                    max-height: 700px;
-                    object-fit: cover;
-                    
-
-                }
-            }
-            .sideText{
-                margin: 0px auto;
-                display: flex;
-                width: 90%;
-                
-
-            .sideTextBox{
-                    display: flex;
-                    flex-flow: column;
-                    justify-content: space-evenly;
-                    width: 80%;
-                    text-align: center;
-                    margin: 0 auto;
-
-                
-                    h4{
-                        font-size: 30px;
-                        font-weight: 500;
-                    
-                    }
-                    p{
-                        font-size: 20px;
-                        line-height: 25px;
-                        
-                        
-                    }
-                }
+            img {
+                width: 80%;
+                max-height: 700px;
+                object-fit: cover;
             }
         }
-        .sideWrapper:nth-child(even){
-            flex-flow: row-reverse;
-            .sidePhoto{
-                display: flex;
-                justify-content: end;
-                
-            }
-
-        }
-    //END SIDEbySIDE
-
-
-
-    //START THREE BOX
-        .threeWrapper{
-            margin: 50px auto;
+        .sideText {
+            margin: 0px auto;
             display: flex;
-            justify-content: space-between;
             width: 90%;
-            font-family: 'Raleway', sans-serif;
 
-        
-            .threeTextBox{
+            .sideTextBox {
                 display: flex;
                 flex-flow: column;
-                justify-content: space-between;
-                width: 30%;
+                justify-content: space-evenly;
+                width: 80%;
                 text-align: center;
-                .iconBox{
-                    top: 0;
-                    scale: 0.5;
-                    height: 50px;
+                margin: 0 auto;
 
+                h4 {
+                    font-size: 30px;
+                    font-weight: 500;
                 }
-                h3{
-                    font-size: 25px;
+                p {
+                    font-size: 20px;
+                    line-height: 25px;
                 }
-                h4{
-                    font-size: 18px;
-                }
-                p{
-                    font-size: 16px;
-                }
-            
-                p:nth-last-child(2) {
-                    // display: none;
-                }
+            }
+        }
+    }
+    .sideWrapper:nth-child(even) {
+        flex-flow: row-reverse;
+        .sidePhoto {
+            display: flex;
+            justify-content: end;
+        }
+    }
+    //END SIDEbySIDE
 
-                .threeReservation{
-                    scale: 1.2;
-                    button {
+    //START THREE BOX
+    .threeWrapper {
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        font-family: "Raleway", sans-serif;
+
+        .threeTextBox {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            width: 30%;
+            text-align: center;
+            .iconBox {
+                top: 0;
+                scale: 0.5;
+                height: 50px;
+            }
+            h3 {
+                font-size: 25px;
+            }
+            h4 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 16px;
+            }
+
+            p:nth-last-child(2) {
+                // display: none;
+            }
+
+            .threeReservation {
+                cursor: pointer;
+                scale: 1.2;
+                button {
                     min-width: 148px;
                     padding: 5px 10px;
                     border: 2px solid $Dark;
@@ -473,153 +435,135 @@ body{
                     text-align: center;
                     text-transform: uppercase;
                     font-size: 30px;
-                    transition: .3s;
+                    transition: 0.3s;
                     z-index: 1;
-                    font-family: 'BenchNine', sans-serif;
+                    font-family: "BenchNine", sans-serif;
                     color: $Dark;
                     scale: 0.7;
-                    }
+                }
 
-                    button::before {
-                    content: '';
+                button::before {
+                    content: "";
                     width: 0;
+
                     height: 300%;
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%, -50%) ;
-                    background:$Dark;
-                    transition: .5s ease;
+                    transform: translate(-50%, -50%);
+                    background: $Dark;
+                    transition: 0.5s ease;
                     display: block;
                     z-index: -1;
-                    }
+                }
 
-                    button:hover::before {
+                button:hover::before {
                     width: 105%;
-                    }
-
-                    button:hover {
-                    color:$Light;
-                    }
-                    
-                    
-
-
-                }
-            }
-            .threeImgBox{
-                width: 30%;
-                img{
-                    width: 100%;
-                    object-fit: cover;
-                    max-height: 425px;
-                    height: 100%;
                 }
 
+                button:hover {
+                    color: $Light;
+                }
             }
+        }
+        .threeImgBox {
+            width: 30%;
+            img {
+                width: 100%;
+                object-fit: cover;
+                max-height: 425px;
+                height: 100%;
+            }
+        }
     }
     //END THREE BOX
 
-
-
-
     // START KITCHEN
-        .kitchenWrapper{
-            padding: 0 0 40px 0;
-            font-family: 'Raleway', sans-serif;
+    .kitchenWrapper {
+        padding: 0 0 40px 0;
+        font-family: "Raleway", sans-serif;
 
-            .imgWrapper{
-                margin-bottom: 40px;
+        .imgWrapper {
+            margin-bottom: 40px;
+            position: relative;
+            .kitchenImg {
                 position: relative;
-                .kitchenImg{
-                    position: relative;
-                    img{
-                        width: 100%;
-                    }
-                    h5{
-                        color: invert($color: #000000);
-                        font-size: 40px;
-                        font-weight: bold;
-                        position: absolute;
-                        left: 50%;
-                        top: 80%;
-                        transform: translate(-50%, -50%);
-                        z-index: 2;
-                    }
+                img {
+                    width: 100%;
+                }
+                h5 {
+                    color: invert($color: #000000);
+                    font-size: 40px;
+                    font-weight: bold;
+                    position: absolute;
+                    left: 50%;
+                    top: 80%;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
                 }
             }
-            .kitchenTextWrapper{
-                display: flex;
-                margin: 0 auto;
-                width:80%;
-                justify-content: space-between;
-                .textBoxes{
-                    width: 30%;
-                    h3{
-                        font-weight: bold;
-                        font-size: 25px;
-                        padding-bottom: 20px;
-                    }
-                    h4{
-                        font-size: 20px;
-                        padding-bottom:10px ;
-                    }
-                    p{
-
-                    }
-                }
-            }   
         }
+        .kitchenTextWrapper {
+            display: flex;
+            margin: 0 auto;
+            width: 80%;
+            justify-content: space-between;
+            .textBoxes {
+                width: 30%;
+                h3 {
+                    font-weight: bold;
+                    font-size: 25px;
+                    padding-bottom: 20px;
+                }
+                h4 {
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                }
+                p {
+                }
+            }
+        }
+    }
     // END KITCHEN
-    
 }
 //   ====== END HOME  ======  //
 
-
-
-
-
-
 //   ====== START MENU  ======  //
-body{
-
+body {
     // Start Menu starter
-    .menuStarter{
+    .menuStarter {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         background-color: $Dark;
         padding: 40px 0;
-        .eachBox{
+        .eachBox {
             width: 25%;
             position: relative;
             overflow: hidden;
-            
-            .imgBox{
+
+            .imgBox {
                 display: flex;
                 justify-content: space-around;
                 position: relative;
                 max-height: 400px;
 
-                img{
+                img {
                     overflow: hidden;
                     object-fit: cover;
                     opacity: 0.8;
                     z-index: 2;
                 }
-                .starterBg{
+                .starterBg {
                     overflow: hidden;
                     position: absolute;
                     background-color: black;
                     height: 100%;
                     width: 100%;
                     max-width: 400px;
-                    
-
                 }
-
             }
-            .textBox{
+            .textBox {
                 width: 100%;
                 position: absolute;
                 bottom: 5px;
@@ -630,37 +574,30 @@ body{
                 flex-flow: column;
                 justify-content: space-evenly;
 
-                h3{
+                h3 {
                     font-size: 22px;
                     padding-bottom: 10px;
                 }
-                h4{
+                h4 {
                     font-size: 18px;
                     padding-bottom: 10px;
-
                 }
-                h5{
+                h5 {
                     font-size: 15p;
                 }
-
-
             }
         }
     }
     // END Menu starter
 
-
-
-
-
     // START ACCORDION
-    .accordionWrapper{
-        font-family: 'BenchNine', sans-serif;
-        p{
+    .accordionWrapper {
+        font-family: "BenchNine", sans-serif;
+        p {
             text-transform: uppercase;
         }
 
-        .accordionHead{
+        .accordionHead {
             background: $Dark;
             color: $Light;
             padding: 18px 18px;
@@ -673,7 +610,7 @@ body{
             border-bottom: 2px solid hwb(0 40% 60%);
             border-top: 2px solid hwb(0 40% 60%);
         }
-        .accordionBottom{
+        .accordionBottom {
             background: $Dark;
             color: $Light;
             padding: 25px 18px;
@@ -687,14 +624,14 @@ body{
         }
 
         .accordion {
-            background-color:$Dark;
+            background-color: $Dark;
             cursor: pointer;
             width: 100%;
             border: none;
             outline: none;
             transition: 0.4s;
             position: relative;
-            p{
+            p {
                 color: $Light;
                 font-size: 20px;
                 height: 30px;
@@ -702,7 +639,7 @@ body{
                 justify-content: center;
                 align-items: center;
             }
-            h4{
+            h4 {
                 display: flex;
                 margin: 0 auto;
                 height: 0px;
@@ -713,13 +650,14 @@ body{
                 color: $Light;
             }
         }
-        
-        .active, .accordion:hover {
+
+        .active,
+        .accordion:hover {
             background-color: $DarkLight;
         }
-        
+
         .accordion:after {
-            content: '\002B';
+            content: "\002B";
             color: $Light;
             font-weight: bold;
             float: right;
@@ -728,28 +666,26 @@ body{
             position: absolute;
             top: -3px;
             right: 0%;
-
-
         }
-        
+
         .active:after {
             content: "\2212";
-        }        
-        .panel{
+        }
+        .panel {
             border-top: 2px solid hwb(0deg 40.7% 59.3%);
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease-out;
-            font-family: 'Nunito', sans-serif;
-            .accordion-body{
+            font-family: "Nunito", sans-serif;
+            .accordion-body {
                 padding: 25px 10px;
                 justify-content: space-evenly;
                 flex-wrap: wrap;
                 display: flex;
                 background-color: $DarkLight;
                 transition: 1s;
-                
-                .product-box{
+
+                .product-box {
                     height: 350px;
                     border: 1px solid $Dark;
                     border-radius: 10px;
@@ -757,123 +693,113 @@ body{
                     background-color: $DarkLight;
                     position: relative;
                     margin: 20px auto;
-                    
-                    
-                    
-                    .imgWrap{
+
+                    .imgWrap {
                         height: 200px;
                         width: 280px;
                         overflow: hidden;
                         position: relative;
                         border-top-right-radius: 10px;
                         border-top-left-radius: 10px;
-                            img{
-                                max-width: 200px;
-                                max-width: 280px;
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                              
-                        overflow: hidden;
+                        img {
+                            max-width: 200px;
+                            max-width: 280px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
 
-                            }
-                        }
-                        h4{
-                            width: 250px;
-                            text-align: center;
-                            margin: 0 auto;
-                            font-size: 20px;
-                            font-weight: bold;
-                            margin-top: 15px;
-                            width: 90%;
-                        }
-                        h6{
-                            max-width: 250px; 
-                            text-align: center;   margin: 0 auto; 
-                            margin-top: 10px;
-                            width: 90%;
-                            font-weight: 100;
-                            line-height: 23px;
+                            overflow: hidden;
                         }
                     }
-                    .priceCart{
-                        border-radius: 10px;
-                        width: 70%;
-                        height: 44px;
-                        position: absolute;
-                        z-index: 1;
-                        bottom: -22px;
-                        left: 50%;
-                        transform: translate(-50%);
-                        font-size: calc(12px + .3vw);
-                        overflow: hidden;
-                        // align-items: stretch;
-                        display: flex;
-                        border: 2px solid $DarkLight;
-                        .price{
-                            width: 50%;
-                            height: 100%;
-                            background-color:$Solid;
-                            position: relative;
-                            span{
-                                font-size: 25px;
-                                position: absolute;
-                                left: 25px;
-                                top: 6px;
-                            }
-
+                    h4 {
+                        width: 250px;
+                        text-align: center;
+                        margin: 0 auto;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-top: 15px;
+                        width: 90%;
+                    }
+                    h6 {
+                        max-width: 250px;
+                        text-align: center;
+                        margin: 0 auto;
+                        margin-top: 10px;
+                        width: 90%;
+                        font-weight: 100;
+                        line-height: 23px;
+                    }
+                }
+                .priceCart {
+                    border-radius: 10px;
+                    width: 70%;
+                    height: 44px;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: -22px;
+                    left: 50%;
+                    transform: translate(-50%);
+                    font-size: calc(12px + 0.3vw);
+                    overflow: hidden;
+                    // align-items: stretch;
+                    display: flex;
+                    border: 2px solid $DarkLight;
+                    .price {
+                        width: 50%;
+                        height: 100%;
+                        background-color: $Solid;
+                        position: relative;
+                        span {
+                            font-size: 25px;
+                            position: absolute;
+                            left: 25px;
+                            top: 6px;
                         }
-                        .cart{
-                            width: 50%;
-                            height: 100%;
-                            background-color: #770e0e;
-                            cursor: pointer;
-                            img{
-                                width: 30px;
-                                height: 30px;
-                                position: absolute;
-                                left: 125px;
-                                top: 6px;
-                                color: white;
-                            }
-
-
+                    }
+                    .cart {
+                        width: 50%;
+                        height: 100%;
+                        background-color: #770e0e;
+                        cursor: pointer;
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            position: absolute;
+                            left: 125px;
+                            top: 6px;
+                            color: white;
                         }
                     }
                 }
+            }
         }
     }
 }
-    // END ACCORDION
+// END ACCORDION
 //   ====== END  MENU ======  //
 
-
-
-
-
 //   ====== START History  ======  //
-body{
-    .overallStory{
+body {
+    .overallStory {
         padding: 50px;
         margin: 0 auto;
         text-align: center;
 
-        h3{
+        h3 {
             font-size: 35px;
             font-weight: bold;
             padding-bottom: 30px;
             text-align: center;
-        
         }
-        img{
+        img {
             width: 100%;
             padding-top: 20px;
             padding-bottom: 20px;
         }
-        p{
+        p {
             font-size: 25px;
-            font-weight:100;
+            font-weight: 100;
             width: 80%;
             margin: 0 auto;
         }
@@ -881,121 +807,108 @@ body{
 }
 //   ====== END   History ======  //
 
-
-
-
-
 //   ====== START  Contact ======  //
-body{
-    .contactHead{
+body {
+    .contactHead {
         width: 100%;
-        h1{font-size: 100px;
+        h1 {
+            font-size: 100px;
             text-align: center;
             padding-top: 40px;
-
         }
-        h2{
+        h2 {
             font-size: 30px;
             text-align: center;
         }
-        h3{
+        h3 {
             font-size: 40px;
             text-align: center;
             padding-bottom: 30px;
             padding-top: 60px;
         }
     }
-    .contactForm{
+    .contactForm {
         display: flex;
         justify-content: space-between;
         padding: 0 70px 70px 70px;
 
-        .contactFormWrapper{
+        .contactFormWrapper {
             width: 50%;
 
-
-            label{
+            label {
                 padding-left: 5px;
             }
             /* Style inputs with type="text", select elements and textareas */
-            input[type=text], select, textarea {
-            width: 100%; /* Full width */
-            padding: 12px; /* Some padding */ 
-            border: 1px solid #ccc; /* Gray border */
-            border-radius: 4px; /* Rounded borders */
-            box-sizing: border-box; /* Make sure that padding and width stays in place */
-            margin-top: 6px; /* Add a top margin */
-            margin-bottom: 16px; /* Bottom margin */
-            resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+            input[type="text"],
+            select,
+            textarea {
+                width: 100%; /* Full width */
+                padding: 12px; /* Some padding */
+                border: 1px solid #ccc; /* Gray border */
+                border-radius: 4px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */
+                resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
             }
-    
+
             /* Style the submit button with a specific background color etc */
-            input[type=submit] {
-            background-color: $Dark;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+            input[type="submit"] {
+                background-color: $Dark;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
             }
-    
+
             /* When moving the mouse over the submit button, add a darker green color */
-            input[type=submit]:hover {
-            background-color: $DarkLight;
+            input[type="submit"]:hover {
+                background-color: $DarkLight;
             }
         }
-        .contactMap{
+        .contactMap {
             width: 40%;
-
         }
-
     }
 }
 //   ====== END    Contact ======  //
 
-
-
-
-
-
-
 //   ====== START  Reservation ======  //
-body{
-    .reservation{
+body {
+    .reservation {
         width: 100%;
-        .reservationWrapper{
+        .reservationWrapper {
             margin: 40px auto;
             width: 80%;
             max-width: 500px;
-            .reservationHead{
+            .reservationHead {
                 text-align: center;
                 border-bottom: 2px solid $Dark;
                 margin-bottom: 20px;
                 padding-bottom: 20px;
                 padding-top: 40px;
-                h3{
+                h3 {
                     font-size: 25px;
                     font-weight: bold;
                 }
             }
-            .reservationBody{
+            .reservationBody {
                 display: flex;
                 flex-flow: column;
                 margin: 0 auto;
 
-                .reservationText{
+                .reservationText {
                     text-align: center;
                     display: flex;
                     flex-flow: column;
-                    h4{ 
+                    h4 {
                         font-size: 18px;
                         font-weight: bold;
                         padding-bottom: 30px;
-                        
                     }
-
                 }
-                .reservationMap{
+                .reservationMap {
                     width: 80%;
                     margin: 0 auto;
                     height: 300px;
@@ -1006,126 +919,103 @@ body{
 }
 //   ====== END    Reservation ======  //
 
-
-
-
-
-
-
-
-
 //   ====== START Footer  ======  //
-body{
+body {
     //START MAP
-    .map{
+    .map {
         padding: 30px 0 50px 0;
         width: 100%;
         display: flex;
         justify-content: center;
-        font-family: 'Raleway', sans-serif;
+        font-family: "Raleway", sans-serif;
 
-        .mapWrapper{
+        .mapWrapper {
             width: 95%;
             display: flex;
-            
-            .mapText{
+
+            .mapText {
                 width: 35%;
                 display: flex;
                 justify-content: space-around;
                 flex-flow: column;
 
-                .text{
+                .text {
                     margin: 0 auto;
-                    h4{
+                    h4 {
                         font-size: 20px;
                         font-weight: bold;
                         padding-bottom: 15px;
                         color: $Dark;
                         text-align: center;
                     }
-                    p{
-                        font-weight:lighter;
+                    p {
+                        font-weight: lighter;
                         padding: 5px 0;
                         color: $Dark;
-
-
                     }
                 }
             }
-            .mapDiv{
+            .mapDiv {
                 width: 65%;
                 height: 600px;
-
             }
         }
     }
     //END MAP
 
-
-
     // START foot
-    .footer{
-    width: 100%;
-    background-color:$Dark;
-    padding: 50px 0;
-    .footerWrapp{
-        margin: 0 auto;
-        display: flex;
-        width: 80%;
-        .footerSections{
+    .footer {
+        width: 100%;
+        background-color: $Dark;
+        padding: 50px 0;
+        .footerWrapp {
+            margin: 0 auto;
             display: flex;
-            justify-content:space-around;
-            align-content: center;
-            width: 100%;
-            
-            .sectionAddress{
-                width: 25%;
-                color: $Light;
-                h4{
-                padding-bottom: 30px;    
-                font-size: 35px;
-                }
+            width: 80%;
+            .footerSections {
+                display: flex;
+                justify-content: space-around;
+                align-content: center;
+                width: 100%;
 
-                p{
-                    padding-top: 10px;
-                    color:$Light;
-                }
+                .sectionAddress {
+                    width: 25%;
+                    color: $Light;
+                    h4 {
+                        padding-bottom: 30px;
+                        font-size: 35px;
+                    }
 
-                p:nth-child(4){
-                    padding-top: 50px;   
-                }
+                    p {
+                        padding-top: 10px;
+                        color: $Light;
+                    }
 
+                    p:nth-child(4) {
+                        padding-top: 50px;
+                    }
+                }
+                .section {
+                    width: 25%;
+                    color: $Light;
+                    h4 {
+                        font-size: 30px;
+                        padding-bottom: 30px;
+                    }
+                    p:nth-child(5) {
+                        padding-top: 50px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        padding-top: 10px;
+                    }
+                }
             }
-            .section{
-                width: 25%;
-                color:$Light;
-                h4{
-                    font-size: 30px;
-                    padding-bottom: 30px;
-                }
-                p:nth-child(5){
-                    padding-top: 50px;   
-
-                }
-
-                p{
-                    font-size: 15px;
-                    padding-top: 10px;
-
-                }
-
-
-                
-
-
-            }
-        
         }
     }
-
-    }
-    .subscribeDiv{
-        h4{
+    .subscribeDiv {
+        h4 {
             color: $Light;
             text-align: center;
             padding: 20px 0;
@@ -1133,56 +1023,47 @@ body{
         }
         background-color: $Dark;
         width: 100%;
-        .subscribeWrapper{
-        margin: 0 auto;
+        .subscribeWrapper {
+            margin: 0 auto;
             width: 80%;
-        position: relative;
-        overflow: hidden;
-        max-width: 600px;
-
-        .subscribeInput{
-            width: 400%;
+            position: relative;
+            overflow: hidden;
             max-width: 600px;
-            height: 50px;
-            border: none;
-            border: 2px solid $DarkLight;
-            border-radius: 7px;
-            padding-left: 10px;
-            font-size: 18px;
-        }
 
-        .subscribeInput:focus{
-            border: none;
-            border-color: none;
-            outline: none;
-        }
-        .subscribeButton{
-            height: 50px;
-            position: absolute;
-            right: 0px;
-            z-index: 1;
-            background: none;
-            border: none;
-            width: 100px;
-            transition: 0.5s;
-            border-left: 2px solid $DarkLight ;
-            font-size: 20px;
+            .subscribeInput {
+                width: 400%;
+                max-width: 600px;
+                height: 50px;
+                border: none;
+                border: 2px solid $DarkLight;
+                border-radius: 7px;
+                padding-left: 10px;
+                font-size: 18px;
+            }
 
-        }
-        .subscribeButton:hover{
-            background-color: $DarkLight;
-            color: $Dark;
-        }
+            .subscribeInput:focus {
+                border: none;
+                border-color: none;
+                outline: none;
+            }
+            .subscribeButton {
+                height: 50px;
+                position: absolute;
+                right: 0px;
+                z-index: 1;
+                background: none;
+                border: none;
+                width: 100px;
+                transition: 0.5s;
+                border-left: 2px solid $DarkLight;
+                font-size: 20px;
+            }
+            .subscribeButton:hover {
+                background-color: $DarkLight;
+                color: $Dark;
+            }
         }
     }
     // END foot
 }
 //   ====== END Footer   ======  //
-
-
-
-
-
-
-
-
