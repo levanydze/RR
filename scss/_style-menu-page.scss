@@ -1,0 +1,250 @@
+ // START ACCORDION
+ .accordionWrapper {
+    font-family: "BenchNine", sans-serif;
+    p {
+        text-transform: uppercase;
+    }
+
+    .accordionHead {
+        background: $Dark;
+        color: $Light;
+        padding: 18px 18px;
+        width: 100%;
+        text-align: center;
+        outline: none;
+        font-size: 40px;
+        transition: 0.4s;
+        font-weight: bold;
+        border-bottom: 2px solid hwb(0 40% 60%);
+        border-top: 2px solid hwb(0 40% 60%);
+    }
+    .accordionBottom {
+        background: $Dark;
+        color: $Light;
+        padding: 25px 18px;
+        width: 100%;
+        text-align: center;
+        outline: none;
+        font-size: 40px;
+        transition: 0.4s;
+        font-weight: bold;
+        border-bottom: 2px solid hwb(0 40% 60%);
+    }
+
+    .accordion {
+        background-color: $Dark;
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        position: relative;
+        p {
+            color: $Light;
+            font-size: 20px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h4 {
+            display: flex;
+            margin: 0 auto;
+            height: 0px;
+            max-width: 150px;
+            color: $Dark;
+            font-size: 15px;
+            text-align: center;
+            color: $Light;
+        }
+    }
+
+    .active,
+    .accordion:hover {
+        background-color: $DarkLight;
+    }
+
+    .accordion:after {
+        content: "\002B";
+        color: $Light;
+        font-weight: bold;
+        float: right;
+        margin-right: 30px;
+        font-size: 35px;
+        position: absolute;
+        top: -3px;
+        right: 0%;
+    }
+
+    .active:after {
+        content: "\2212";
+    }
+    .panel {
+        border-top: 2px solid hwb(0deg 40.7% 59.3%);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+        font-family: "Nunito", sans-serif;
+        .accordion-body {
+            padding: 25px 10px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            display: flex;
+            background-color: $DarkLight;
+            transition: 1s;
+
+            .product-box {
+                height: 350px;
+                border: 1px solid $Dark;
+                border-radius: 10px;
+                color: $Light;
+                background-color: $DarkLight;
+                position: relative;
+                margin: 20px auto;
+
+                .imgWrap {
+                    height: 200px;
+                    width: 280px;
+                    overflow: hidden;
+                    position: relative;
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 10px;
+                    img {
+                        max-width: 200px;
+                        max-width: 280px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+
+                        overflow: hidden;
+                    }
+                }
+                h4 {
+                    width: 250px;
+                    text-align: center;
+                    margin: 0 auto;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-top: 15px;
+                    width: 90%;
+                }
+                h6 {
+                    max-width: 250px;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    width: 90%;
+                    font-weight: 100;
+                    line-height: 23px;
+                }
+            }
+            .priceCart {
+                border-radius: 10px;
+                width: 70%;
+                height: 44px;
+                position: absolute;
+                z-index: 1;
+                bottom: -22px;
+                left: 50%;
+                transform: translate(-50%);
+                font-size: calc(12px + 0.3vw);
+                overflow: hidden;
+                // align-items: stretch;
+                display: flex;
+                border: 2px solid $DarkLight;
+                .price {
+                    width: 50%;
+                    height: 100%;
+                    background-color: $Solid;
+                    position: relative;
+                    span {
+                        font-size: 25px;
+                        position: absolute;
+                        left: 25px;
+                        top: 6px;
+                    }
+                }
+                .cart {
+                    width: 50%;
+                    height: 100%;
+                    background-color: #770e0e;
+                    cursor: pointer;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        left: 125px;
+                        top: 6px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+//   ====== START MENU  ======  //
+body {
+    // Start Menu starter
+    .menuStarter {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: $Dark;
+        padding: 40px 0;
+        .eachBox {
+            width: 25%;
+            position: relative;
+            overflow: hidden;
+
+            .imgBox {
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                max-height: 400px;
+
+                img {
+                    overflow: hidden;
+                    object-fit: cover;
+                    opacity: 0.8;
+                    z-index: 2;
+                }
+                .starterBg {
+                    overflow: hidden;
+                    position: absolute;
+                    background-color: black;
+                    height: 100%;
+                    width: 100%;
+                    max-width: 400px;
+                }
+            }
+            .textBox {
+                width: 100%;
+                position: absolute;
+                bottom: 5px;
+                text-align: center;
+                z-index: 3;
+                color: $Light;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-evenly;
+
+                h3 {
+                    font-size: 22px;
+                    padding-bottom: 10px;
+                }
+                h4 {
+                    font-size: 18px;
+                    padding-bottom: 10px;
+                }
+                h5 {
+                    font-size: 15p;
+                }
+            }
+        }
+    }
+    // END Menu starter
+
+}
+//   ====== END  MENU ======  //
+// END ACCORDION

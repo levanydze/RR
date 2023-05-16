@@ -2550,6 +2550,360 @@ a {
   background-color: rgb(65, 65, 65);
 }
 
+body .overallStory {
+  padding: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+body .overallStory h3 {
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  text-align: center;
+}
+body .overallStory img {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body .overallStory p {
+  font-size: 25px;
+  font-weight: 100;
+  width: 80%;
+  margin: 0 auto;
+}
+
+body .contactHead {
+  width: 100%;
+}
+body .contactHead h1 {
+  font-size: 100px;
+  text-align: center;
+  padding-top: 40px;
+}
+body .contactHead h2 {
+  font-size: 30px;
+  text-align: center;
+}
+body .contactHead h3 {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 60px;
+}
+body .contactForm {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px 70px 70px;
+}
+body .contactForm .contactFormWrapper {
+  width: 50%;
+  /* Style inputs with type="text", select elements and textareas */
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+}
+body .contactForm .contactFormWrapper label {
+  padding-left: 5px;
+}
+body .contactForm .contactFormWrapper input[type=text],
+body .contactForm .contactFormWrapper select,
+body .contactForm .contactFormWrapper textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+body .contactForm .contactFormWrapper input[type=submit] {
+  background-color: rgba(0, 0, 0, 0.863);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .contactForm .contactFormWrapper input[type=submit]:hover {
+  background-color: rgba(0, 0, 0, 0.593);
+}
+body .contactForm .contactMap {
+  width: 40%;
+}
+
+body .reservation {
+  width: 100%;
+}
+body .reservation .reservationWrapper {
+  margin: 40px auto;
+  width: 80%;
+  max-width: 500px;
+}
+body .reservation .reservationWrapper .reservationHead {
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.863);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+body .reservation .reservationWrapper .reservationHead h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+body .reservation .reservationWrapper .reservationBody {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+}
+body .reservation .reservationWrapper .reservationBody .reservationText {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+}
+body .reservation .reservationWrapper .reservationBody .reservationText h4 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+body .reservation .reservationWrapper .reservationBody .reservationMap {
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.accordionWrapper {
+  font-family: "BenchNine", sans-serif;
+}
+.accordionWrapper p {
+  text-transform: uppercase;
+}
+.accordionWrapper .accordionHead {
+  background: rgba(0, 0, 0, 0.863);
+  color: #fffaf7;
+  padding: 18px 18px;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  font-size: 40px;
+  transition: 0.4s;
+  font-weight: bold;
+  border-bottom: 2px solid hwb(0 40% 60%);
+  border-top: 2px solid hwb(0 40% 60%);
+}
+.accordionWrapper .accordionBottom {
+  background: rgba(0, 0, 0, 0.863);
+  color: #fffaf7;
+  padding: 25px 18px;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  font-size: 40px;
+  transition: 0.4s;
+  font-weight: bold;
+  border-bottom: 2px solid hwb(0 40% 60%);
+}
+.accordionWrapper .accordion {
+  background-color: rgba(0, 0, 0, 0.863);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+}
+.accordionWrapper .accordion p {
+  color: #fffaf7;
+  font-size: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordionWrapper .accordion h4 {
+  display: flex;
+  margin: 0 auto;
+  height: 0px;
+  max-width: 150px;
+  color: rgba(0, 0, 0, 0.863);
+  font-size: 15px;
+  text-align: center;
+  color: #fffaf7;
+}
+.accordionWrapper .active,
+.accordionWrapper .accordion:hover {
+  background-color: rgba(0, 0, 0, 0.593);
+}
+.accordionWrapper .accordion:after {
+  content: "+";
+  color: #fffaf7;
+  font-weight: bold;
+  float: right;
+  margin-right: 30px;
+  font-size: 35px;
+  position: absolute;
+  top: -3px;
+  right: 0%;
+}
+.accordionWrapper .active:after {
+  content: "−";
+}
+.accordionWrapper .panel {
+  border-top: 2px solid hwb(0deg 40.7% 59.3%);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  font-family: "Nunito", sans-serif;
+}
+.accordionWrapper .panel .accordion-body {
+  padding: 25px 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.593);
+  transition: 1s;
+}
+.accordionWrapper .panel .accordion-body .product-box {
+  height: 350px;
+  border: 1px solid rgba(0, 0, 0, 0.863);
+  border-radius: 10px;
+  color: #fffaf7;
+  background-color: rgba(0, 0, 0, 0.593);
+  position: relative;
+  margin: 20px auto;
+}
+.accordionWrapper .panel .accordion-body .product-box .imgWrap {
+  height: 200px;
+  width: 280px;
+  overflow: hidden;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.accordionWrapper .panel .accordion-body .product-box .imgWrap img {
+  max-width: 200px;
+  max-width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.accordionWrapper .panel .accordion-body .product-box h4 {
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  width: 90%;
+}
+.accordionWrapper .panel .accordion-body .product-box h6 {
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 90%;
+  font-weight: 100;
+  line-height: 23px;
+}
+.accordionWrapper .panel .accordion-body .priceCart {
+  border-radius: 10px;
+  width: 70%;
+  height: 44px;
+  position: absolute;
+  z-index: 1;
+  bottom: -22px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: calc(12px + 0.3vw);
+  overflow: hidden;
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.593);
+}
+.accordionWrapper .panel .accordion-body .priceCart .price {
+  width: 50%;
+  height: 100%;
+  background-color: #222;
+  position: relative;
+}
+.accordionWrapper .panel .accordion-body .priceCart .price span {
+  font-size: 25px;
+  position: absolute;
+  left: 25px;
+  top: 6px;
+}
+.accordionWrapper .panel .accordion-body .priceCart .cart {
+  width: 50%;
+  height: 100%;
+  background-color: #770e0e;
+  cursor: pointer;
+}
+.accordionWrapper .panel .accordion-body .priceCart .cart img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 125px;
+  top: 6px;
+  color: white;
+}
+
+body .menuStarter {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.863);
+  padding: 40px 0;
+}
+body .menuStarter .eachBox {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+body .menuStarter .eachBox .imgBox {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  max-height: 400px;
+}
+body .menuStarter .eachBox .imgBox img {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+  z-index: 2;
+}
+body .menuStarter .eachBox .imgBox .starterBg {
+  overflow: hidden;
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+}
+body .menuStarter .eachBox .textBox {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  z-index: 3;
+  color: #fffaf7;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+body .menuStarter .eachBox .textBox h3 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+body .menuStarter .eachBox .textBox h4 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+body .menuStarter .eachBox .textBox h5 {
+  font-size: 15p;
+}
+
 body .footer {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.863);
@@ -2856,18 +3210,6 @@ body .menuWrapper .wrapper .right .reserv-button:hover {
   color: #111;
 }
 
-body .overlayImg {
-  position: absolute;
-  transition: 200ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-}
 body .undermenu {
   height: 50px;
   width: 100%;
@@ -2929,17 +3271,6 @@ body .res-modal-bg-active {
   opacity: 1;
 }
 
-body .carousel-wrapper {
-  display: flex;
-  height: 500px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.593);
-  justify-content: center;
-  align-items: center;
-}
-body .carousel-wrapper h2 {
-  font-size: 50px;
-}
 body .sideWrapper {
   width: 90%;
   margin: 150px auto;
@@ -3063,399 +3394,47 @@ body .threeWrapper .threeImgBox img {
   max-height: 425px;
   height: 100%;
 }
-body .kitchenWrapper {
-  padding: 0 0 40px 0;
-  font-family: "Raleway", sans-serif;
-}
-body .kitchenWrapper .imgWrapper {
-  margin-bottom: 40px;
+body .head-photo-wrapper {
+  max-height: 500px;
+  display: flex;
   position: relative;
 }
-body .kitchenWrapper .imgWrapper .kitchenImg {
-  position: relative;
+body .head-photo-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-body .kitchenWrapper .imgWrapper .kitchenImg img {
-  width: 100%;
-}
-body .kitchenWrapper .imgWrapper .kitchenImg h5 {
+body .head-photo-wrapper .h5 {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   position: absolute;
   left: 50%;
   top: 80%;
   transform: translate(-50%, -50%);
   z-index: 2;
-}
-body .kitchenWrapper .kitchenTextWrapper {
-  display: flex;
-  margin: 0 auto;
-  width: 80%;
-  justify-content: space-between;
-}
-body .kitchenWrapper .kitchenTextWrapper .textBoxes {
-  width: 30%;
-}
-body .kitchenWrapper .kitchenTextWrapper .textBoxes h3 {
-  font-weight: bold;
-  font-size: 25px;
-  padding-bottom: 20px;
-}
-body .kitchenWrapper .kitchenTextWrapper .textBoxes h4 {
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-body .menuStarter {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, 0.863);
-  padding: 40px 0;
-}
-body .menuStarter .eachBox {
-  width: 25%;
-  position: relative;
-  overflow: hidden;
-}
-body .menuStarter .eachBox .imgBox {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  max-height: 400px;
-}
-body .menuStarter .eachBox .imgBox img {
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0.8;
-  z-index: 2;
-}
-body .menuStarter .eachBox .imgBox .starterBg {
-  overflow: hidden;
-  position: absolute;
-  background-color: black;
+  text-align: center;
+  line-height: 50px;
   height: 100%;
   width: 100%;
-  max-width: 400px;
-}
-body .menuStarter .eachBox .textBox {
-  width: 100%;
-  position: absolute;
-  bottom: 5px;
-  text-align: center;
-  z-index: 3;
-  color: #fffaf7;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
 }
-body .menuStarter .eachBox .textBox h3 {
-  font-size: 22px;
-  padding-bottom: 10px;
-}
-body .menuStarter .eachBox .textBox h4 {
-  font-size: 18px;
-  padding-bottom: 10px;
-}
-body .menuStarter .eachBox .textBox h5 {
-  font-size: 15p;
-}
-body .accordionWrapper {
-  font-family: "BenchNine", sans-serif;
-}
-body .accordionWrapper p {
-  text-transform: uppercase;
-}
-body .accordionWrapper .accordionHead {
-  background: rgba(0, 0, 0, 0.863);
-  color: #fffaf7;
-  padding: 18px 18px;
+body .head-photo-wrapper .web-wrapper {
   width: 100%;
-  text-align: center;
-  outline: none;
-  font-size: 40px;
-  transition: 0.4s;
-  font-weight: bold;
-  border-bottom: 2px solid hwb(0 40% 60%);
-  border-top: 2px solid hwb(0 40% 60%);
-}
-body .accordionWrapper .accordionBottom {
-  background: rgba(0, 0, 0, 0.863);
-  color: #fffaf7;
-  padding: 25px 18px;
-  width: 100%;
-  text-align: center;
-  outline: none;
-  font-size: 40px;
-  transition: 0.4s;
-  font-weight: bold;
-  border-bottom: 2px solid hwb(0 40% 60%);
-}
-body .accordionWrapper .accordion {
-  background-color: rgba(0, 0, 0, 0.863);
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  outline: none;
-  transition: 0.4s;
   position: relative;
 }
-body .accordionWrapper .accordion p {
-  color: #fffaf7;
-  font-size: 20px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .accordionWrapper .accordion h4 {
-  display: flex;
-  margin: 0 auto;
-  height: 0px;
-  max-width: 150px;
-  color: rgba(0, 0, 0, 0.863);
-  font-size: 15px;
-  text-align: center;
-  color: #fffaf7;
-}
-body .accordionWrapper .active,
-body .accordionWrapper .accordion:hover {
-  background-color: rgba(0, 0, 0, 0.593);
-}
-body .accordionWrapper .accordion:after {
-  content: "+";
-  color: #fffaf7;
-  font-weight: bold;
-  float: right;
-  margin-right: 30px;
-  font-size: 35px;
-  position: absolute;
-  top: -3px;
-  right: 0%;
-}
-body .accordionWrapper .active:after {
-  content: "−";
-}
-body .accordionWrapper .panel {
-  border-top: 2px solid hwb(0deg 40.7% 59.3%);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out;
-  font-family: "Nunito", sans-serif;
-}
-body .accordionWrapper .panel .accordion-body {
-  padding: 25px 10px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.593);
-  transition: 1s;
-}
-body .accordionWrapper .panel .accordion-body .product-box {
-  height: 350px;
-  border: 1px solid rgba(0, 0, 0, 0.863);
-  border-radius: 10px;
-  color: #fffaf7;
-  background-color: rgba(0, 0, 0, 0.593);
-  position: relative;
-  margin: 20px auto;
-}
-body .accordionWrapper .panel .accordion-body .product-box .imgWrap {
-  height: 200px;
-  width: 280px;
-  overflow: hidden;
-  position: relative;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-body .accordionWrapper .panel .accordion-body .product-box .imgWrap img {
-  max-width: 200px;
-  max-width: 280px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-}
-body .accordionWrapper .panel .accordion-body .product-box h4 {
-  width: 250px;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 15px;
-  width: 90%;
-}
-body .accordionWrapper .panel .accordion-body .product-box h6 {
-  max-width: 250px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 10px;
-  width: 90%;
-  font-weight: 100;
-  line-height: 23px;
-}
-body .accordionWrapper .panel .accordion-body .priceCart {
-  border-radius: 10px;
-  width: 70%;
-  height: 44px;
-  position: absolute;
-  z-index: 1;
-  bottom: -22px;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: calc(12px + 0.3vw);
-  overflow: hidden;
-  display: flex;
-  border: 2px solid rgba(0, 0, 0, 0.593);
-}
-body .accordionWrapper .panel .accordion-body .priceCart .price {
-  width: 50%;
+body .head-photo-wrapper .web-wrapper img {
+  width: 100%;
   height: 100%;
-  background-color: #222;
+}
+body .head-photo-wrapper .photography-wrapper {
+  width: 50%;
   position: relative;
 }
-body .accordionWrapper .panel .accordion-body .priceCart .price span {
-  font-size: 25px;
-  position: absolute;
-  left: 25px;
-  top: 6px;
-}
-body .accordionWrapper .panel .accordion-body .priceCart .cart {
-  width: 50%;
+body .head-photo-wrapper .photography-wrapper img {
+  width: 100%;
   height: 100%;
-  background-color: #770e0e;
-  cursor: pointer;
-}
-body .accordionWrapper .panel .accordion-body .priceCart .cart img {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: 125px;
-  top: 6px;
-  color: white;
-}
-
-body .overallStory {
-  padding: 50px;
-  margin: 0 auto;
-  text-align: center;
-}
-body .overallStory h3 {
-  font-size: 35px;
-  font-weight: bold;
-  padding-bottom: 30px;
-  text-align: center;
-}
-body .overallStory img {
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-body .overallStory p {
-  font-size: 25px;
-  font-weight: 100;
-  width: 80%;
-  margin: 0 auto;
-}
-
-body .contactHead {
-  width: 100%;
-}
-body .contactHead h1 {
-  font-size: 100px;
-  text-align: center;
-  padding-top: 40px;
-}
-body .contactHead h2 {
-  font-size: 30px;
-  text-align: center;
-}
-body .contactHead h3 {
-  font-size: 40px;
-  text-align: center;
-  padding-bottom: 30px;
-  padding-top: 60px;
-}
-body .contactForm {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 70px 70px 70px;
-}
-body .contactForm .contactFormWrapper {
-  width: 50%;
-  /* Style inputs with type="text", select elements and textareas */
-  /* Style the submit button with a specific background color etc */
-  /* When moving the mouse over the submit button, add a darker green color */
-}
-body .contactForm .contactFormWrapper label {
-  padding-left: 5px;
-}
-body .contactForm .contactFormWrapper input[type=text],
-body .contactForm .contactFormWrapper select,
-body .contactForm .contactFormWrapper textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-body .contactForm .contactFormWrapper input[type=submit] {
-  background-color: rgba(0, 0, 0, 0.863);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-body .contactForm .contactFormWrapper input[type=submit]:hover {
-  background-color: rgba(0, 0, 0, 0.593);
-}
-body .contactForm .contactMap {
-  width: 40%;
-}
-
-body .reservation {
-  width: 100%;
-}
-body .reservation .reservationWrapper {
-  margin: 40px auto;
-  width: 80%;
-  max-width: 500px;
-}
-body .reservation .reservationWrapper .reservationHead {
-  text-align: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.863);
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  padding-top: 40px;
-}
-body .reservation .reservationWrapper .reservationHead h3 {
-  font-size: 25px;
-  font-weight: bold;
-}
-body .reservation .reservationWrapper .reservationBody {
-  display: flex;
-  flex-flow: column;
-  margin: 0 auto;
-}
-body .reservation .reservationWrapper .reservationBody .reservationText {
-  text-align: center;
-  display: flex;
-  flex-flow: column;
-}
-body .reservation .reservationWrapper .reservationBody .reservationText h4 {
-  font-size: 18px;
-  font-weight: bold;
-  padding-bottom: 30px;
-}
-body .reservation .reservationWrapper .reservationBody .reservationMap {
-  width: 80%;
-  margin: 0 auto;
-  height: 300px;
 }
 
 body .map {

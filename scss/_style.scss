@@ -1,18 +1,18 @@
-//   ====== START Header - Footer ======  //
+
 body {
     // START ELEMENTS
-    .overlayImg {
-        position: absolute;
-        transition: 200ms ease-in-out;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.4);
-        z-index: 1;
-        height: 100%;
-        width: 100%;
-    }
+    // .overlayImg {
+    //     position: absolute;
+    //     transition: 200ms ease-in-out;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background-color: rgba(0, 0, 0, 0.4);
+    //     z-index: 1;
+    //     height: 100%;
+    //     width: 100%;
+    // }
     .undermenu {
         height: 50px;
         width: 100%;
@@ -23,6 +23,7 @@ body {
         max-width: 1350px;
     }
     // END ELEMENTS
+
     // START MODAL
     .reservation-modal-bg {
         position: fixed;
@@ -81,22 +82,11 @@ body {
     }
     // END MODAL
 }
-//   ====== END Header - Footer ======  //
+
 
 //   ====== START HOME  ======  //
 body {
-    .carousel-wrapper {
-        display: flex;
-        height: 500px;
-        width: 100%;
-        background-color: $DarkLight;
-        justify-content: center;
-        align-items: center;
-        h2 {
-            font-size: 50px;
-        }
-    }
-    //END SLIDER
+
 
     // START SIDEbySIDE
     .sideWrapper {
@@ -178,9 +168,7 @@ body {
                 font-size: 16px;
             }
 
-            p:nth-last-child(2) {
-                // display: none;
-            }
+       
 
             .threeReservation {
                 cursor: pointer;
@@ -239,445 +227,54 @@ body {
     //END THREE BOX
 
     // START KITCHEN
-    .kitchenWrapper {
-        padding: 0 0 40px 0;
-        font-family: "Raleway", sans-serif;
-
-        .imgWrapper {
-            margin-bottom: 40px;
-            position: relative;
-            .kitchenImg {
-                position: relative;
-                img {
-                    width: 100%;
-                }
-                h5 {
-                    color: invert($color: #000000);
-                    font-size: 40px;
-                    font-weight: bold;
-                    position: absolute;
-                    left: 50%;
-                    top: 80%;
-                    transform: translate(-50%, -50%);
-                    z-index: 2;
-                }
-            }
+    .head-photo-wrapper {
+        max-height: 500px;
+        display: flex;
+        position: relative;
+        img{
+            object-fit: cover;
         }
-        .kitchenTextWrapper {
-            display: flex;
-            margin: 0 auto;
-            width: 80%;
-            justify-content: space-between;
-            .textBoxes {
-                width: 30%;
-                h3 {
-                    font-weight: bold;
-                    font-size: 25px;
-                    padding-bottom: 20px;
-                }
-                h4 {
-                    font-size: 20px;
-                    padding-bottom: 10px;
-                }
-                p {
-                }
-            }
+               .h5 {
+              color: invert($color: #000000);
+              font-size: 30px;
+              font-weight: bold;
+              position: absolute;
+              left: 50%;
+              top: 80%;
+              transform: translate(-50%, -50%);
+              z-index: 2;
+              text-align: center;
+              line-height: 50px;
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-flow: column;
+              justify-content: space-evenly;
         }
-    }
-    // END KITCHEN
+        .web-wrapper {
+          width: 100%;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .photography-wrapper {
+          width: 50%;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      } 
+     
+      // END WEB and PHOTO Head  
+    
 }
 //   ====== END HOME  ======  //
 
-//   ====== START MENU  ======  //
-body {
-    // Start Menu starter
-    .menuStarter {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        background-color: $Dark;
-        padding: 40px 0;
-        .eachBox {
-            width: 25%;
-            position: relative;
-            overflow: hidden;
 
-            .imgBox {
-                display: flex;
-                justify-content: space-around;
-                position: relative;
-                max-height: 400px;
-
-                img {
-                    overflow: hidden;
-                    object-fit: cover;
-                    opacity: 0.8;
-                    z-index: 2;
-                }
-                .starterBg {
-                    overflow: hidden;
-                    position: absolute;
-                    background-color: black;
-                    height: 100%;
-                    width: 100%;
-                    max-width: 400px;
-                }
-            }
-            .textBox {
-                width: 100%;
-                position: absolute;
-                bottom: 5px;
-                text-align: center;
-                z-index: 3;
-                color: $Light;
-                display: flex;
-                flex-flow: column;
-                justify-content: space-evenly;
-
-                h3 {
-                    font-size: 22px;
-                    padding-bottom: 10px;
-                }
-                h4 {
-                    font-size: 18px;
-                    padding-bottom: 10px;
-                }
-                h5 {
-                    font-size: 15p;
-                }
-            }
-        }
-    }
-    // END Menu starter
-
-    // START ACCORDION
-    .accordionWrapper {
-        font-family: "BenchNine", sans-serif;
-        p {
-            text-transform: uppercase;
-        }
-
-        .accordionHead {
-            background: $Dark;
-            color: $Light;
-            padding: 18px 18px;
-            width: 100%;
-            text-align: center;
-            outline: none;
-            font-size: 40px;
-            transition: 0.4s;
-            font-weight: bold;
-            border-bottom: 2px solid hwb(0 40% 60%);
-            border-top: 2px solid hwb(0 40% 60%);
-        }
-        .accordionBottom {
-            background: $Dark;
-            color: $Light;
-            padding: 25px 18px;
-            width: 100%;
-            text-align: center;
-            outline: none;
-            font-size: 40px;
-            transition: 0.4s;
-            font-weight: bold;
-            border-bottom: 2px solid hwb(0 40% 60%);
-        }
-
-        .accordion {
-            background-color: $Dark;
-            cursor: pointer;
-            width: 100%;
-            border: none;
-            outline: none;
-            transition: 0.4s;
-            position: relative;
-            p {
-                color: $Light;
-                font-size: 20px;
-                height: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            h4 {
-                display: flex;
-                margin: 0 auto;
-                height: 0px;
-                max-width: 150px;
-                color: $Dark;
-                font-size: 15px;
-                text-align: center;
-                color: $Light;
-            }
-        }
-
-        .active,
-        .accordion:hover {
-            background-color: $DarkLight;
-        }
-
-        .accordion:after {
-            content: "\002B";
-            color: $Light;
-            font-weight: bold;
-            float: right;
-            margin-right: 30px;
-            font-size: 35px;
-            position: absolute;
-            top: -3px;
-            right: 0%;
-        }
-
-        .active:after {
-            content: "\2212";
-        }
-        .panel {
-            border-top: 2px solid hwb(0deg 40.7% 59.3%);
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease-out;
-            font-family: "Nunito", sans-serif;
-            .accordion-body {
-                padding: 25px 10px;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
-                display: flex;
-                background-color: $DarkLight;
-                transition: 1s;
-
-                .product-box {
-                    height: 350px;
-                    border: 1px solid $Dark;
-                    border-radius: 10px;
-                    color: $Light;
-                    background-color: $DarkLight;
-                    position: relative;
-                    margin: 20px auto;
-
-                    .imgWrap {
-                        height: 200px;
-                        width: 280px;
-                        overflow: hidden;
-                        position: relative;
-                        border-top-right-radius: 10px;
-                        border-top-left-radius: 10px;
-                        img {
-                            max-width: 200px;
-                            max-width: 280px;
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-
-                            overflow: hidden;
-                        }
-                    }
-                    h4 {
-                        width: 250px;
-                        text-align: center;
-                        margin: 0 auto;
-                        font-size: 20px;
-                        font-weight: bold;
-                        margin-top: 15px;
-                        width: 90%;
-                    }
-                    h6 {
-                        max-width: 250px;
-                        text-align: center;
-                        margin: 0 auto;
-                        margin-top: 10px;
-                        width: 90%;
-                        font-weight: 100;
-                        line-height: 23px;
-                    }
-                }
-                .priceCart {
-                    border-radius: 10px;
-                    width: 70%;
-                    height: 44px;
-                    position: absolute;
-                    z-index: 1;
-                    bottom: -22px;
-                    left: 50%;
-                    transform: translate(-50%);
-                    font-size: calc(12px + 0.3vw);
-                    overflow: hidden;
-                    // align-items: stretch;
-                    display: flex;
-                    border: 2px solid $DarkLight;
-                    .price {
-                        width: 50%;
-                        height: 100%;
-                        background-color: $Solid;
-                        position: relative;
-                        span {
-                            font-size: 25px;
-                            position: absolute;
-                            left: 25px;
-                            top: 6px;
-                        }
-                    }
-                    .cart {
-                        width: 50%;
-                        height: 100%;
-                        background-color: #770e0e;
-                        cursor: pointer;
-                        img {
-                            width: 30px;
-                            height: 30px;
-                            position: absolute;
-                            left: 125px;
-                            top: 6px;
-                            color: white;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-// END ACCORDION
-//   ====== END  MENU ======  //
-
-//   ====== START History  ======  //
-body {
-    .overallStory {
-        padding: 50px;
-        margin: 0 auto;
-        text-align: center;
-
-        h3 {
-            font-size: 35px;
-            font-weight: bold;
-            padding-bottom: 30px;
-            text-align: center;
-        }
-        img {
-            width: 100%;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        p {
-            font-size: 25px;
-            font-weight: 100;
-            width: 80%;
-            margin: 0 auto;
-        }
-    }
-}
-//   ====== END   History ======  //
-
-//   ====== START  Contact ======  //
-body {
-    .contactHead {
-        width: 100%;
-        h1 {
-            font-size: 100px;
-            text-align: center;
-            padding-top: 40px;
-        }
-        h2 {
-            font-size: 30px;
-            text-align: center;
-        }
-        h3 {
-            font-size: 40px;
-            text-align: center;
-            padding-bottom: 30px;
-            padding-top: 60px;
-        }
-    }
-    .contactForm {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 70px 70px 70px;
-
-        .contactFormWrapper {
-            width: 50%;
-
-            label {
-                padding-left: 5px;
-            }
-            /* Style inputs with type="text", select elements and textareas */
-            input[type="text"],
-            select,
-            textarea {
-                width: 100%; /* Full width */
-                padding: 12px; /* Some padding */
-                border: 1px solid #ccc; /* Gray border */
-                border-radius: 4px; /* Rounded borders */
-                box-sizing: border-box; /* Make sure that padding and width stays in place */
-                margin-top: 6px; /* Add a top margin */
-                margin-bottom: 16px; /* Bottom margin */
-                resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-            }
-
-            /* Style the submit button with a specific background color etc */
-            input[type="submit"] {
-                background-color: $Dark;
-                color: white;
-                padding: 12px 20px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-
-            /* When moving the mouse over the submit button, add a darker green color */
-            input[type="submit"]:hover {
-                background-color: $DarkLight;
-            }
-        }
-        .contactMap {
-            width: 40%;
-        }
-    }
-}
-//   ====== END    Contact ======  //
-
-//   ====== START  Reservation ======  //
-body {
-    .reservation {
-        width: 100%;
-        .reservationWrapper {
-            margin: 40px auto;
-            width: 80%;
-            max-width: 500px;
-            .reservationHead {
-                text-align: center;
-                border-bottom: 2px solid $Dark;
-                margin-bottom: 20px;
-                padding-bottom: 20px;
-                padding-top: 40px;
-                h3 {
-                    font-size: 25px;
-                    font-weight: bold;
-                }
-            }
-            .reservationBody {
-                display: flex;
-                flex-flow: column;
-                margin: 0 auto;
-
-                .reservationText {
-                    text-align: center;
-                    display: flex;
-                    flex-flow: column;
-                    h4 {
-                        font-size: 18px;
-                        font-weight: bold;
-                        padding-bottom: 30px;
-                    }
-                }
-                .reservationMap {
-                    width: 80%;
-                    margin: 0 auto;
-                    height: 300px;
-                }
-            }
-        }
-    }
-}
-//   ====== END    Reservation ======  //
 
 //   ====== START Footer  ======  //
 body {
