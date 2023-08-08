@@ -9,8 +9,8 @@ class chachaHeader extends HTMLElement {
           </label>
             <ul class="menu">
               <li class="menuLi"><a href="index.html">HOME</a></li>
-              <li class="menuLi"><a href="history.html">HISTORY</a>          </li>
-              <li class="menuLi"><a href="contact.html">CONTACT</a></li>
+              <li class="menuLi"><a href="history.html">MENU</a>          </li>
+              <li class="menuLi"><a href="menu.html">CONTACT</a></li>
               <li class="menuLi"><a href="reservation.html">MAKE BOOKING</a></li>
               <li style=" border: none;" class="menuLi"></li>
               <li style=" border: none;" class="menuLi"></li>
@@ -44,7 +44,7 @@ class chachaHeader extends HTMLElement {
                   <div class="left">
                       <li class="menuLi">
                           <ul><a class="menuBtn" href="index.html">HOME</a></ul>
-                          <ul><a class="menuBtn" href="history.html">HISTORY</a></ul>
+                          <ul><a class="menuBtn" href="menu.html">MENU</a></ul>
                           <ul><a class="menuBtn" href="contact.html">CONTACT</a></ul>
                       </li>
                   </div>
